@@ -1,8 +1,24 @@
 # ApiClient.DoubleClick method (1 of 2)
 
+Use this function to perform in-game mouse double-clicks.
+
 ```csharp
 public bool DoubleClick(MouseButtons buttonId, Vector2 position, ulong clickFrameCount = 30, 
     int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| buttonId | The mouse button to use for the double click operation. See MouseButtons. |
+| position | The Vector2 location to double click in Screen space. |
+| clickFrameCount | The number of frames to double click the specific position. |
+| timeout | The number of seconds to wait for a response that the Click request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+## Examples
+
+```csharp
+//Double-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
+            api.DoubleClick(MouseButtons.LEFT, new Vector2(0, 0), 30, 30);
 ```
 
 ## See Also
@@ -14,9 +30,26 @@ public bool DoubleClick(MouseButtons buttonId, Vector2 position, ulong clickFram
 
 # ApiClient.DoubleClick method (2 of 2)
 
+Use this function to perform in-game mouse double-clicks.
+
 ```csharp
 public bool DoubleClick(MouseButtons buttonId, float x, float y, ulong clickFrameCount, 
     int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| buttonId | The mouse button to use for the double click operation. See MouseButtons. |
+| x | The X coordinate of the game to double click in Screen space. |
+| y | The Y coordinate of the game to double click in Screen space. |
+| clickFrameCount | The number of frames to click the specific location. |
+| timeout | The number of seconds to wait for a response that the Click request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+## Examples
+
+```csharp
+//Double-clicks the left mouse button at position 0, 0 on the screen over a duration of 30 frames.
+            api.DoubleClick(MouseButtons.LEFT, 0, 0, 30, 30);
 ```
 
 ## See Also

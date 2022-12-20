@@ -1,8 +1,29 @@
 # ApiClient.WaitForObjectValue method
 
+Wait for an object to exist and have a specific value for a specified field/property.
+
 ```csharp
 public bool WaitForObjectValue(string hierarchyPath, string fieldOrPropertyName, object value, 
     bool waitForObject = true, int timeout = 60)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath to the object. |
+| fieldOrPropertyName | The field/property name for inspection. |
+| value | The value to wait for. |
+| waitForObject | If TRUE, wait for the object to exist if it doesn't. |
+| timeout | The amount of time to wait for the object to exist with the specified value. |
+
+## Return Value
+
+TRUE if the object exists with the specified value in the alloted timeout.
+
+## Examples
+
+```csharp
+//Waits for the value of the TextMeshProUGUI input field with the name "Text" to be "America"
+            api.WaitForObjectValue("//*[@name='Text']/fn:component('TMPro.TextMeshProUGUI')", "text", "America");
 ```
 
 ## See Also

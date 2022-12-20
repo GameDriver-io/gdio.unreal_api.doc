@@ -1,8 +1,30 @@
 # ApiClient.SetObjectFieldValue method
 
+Set the field or property of an object.
+
 ```csharp
 public bool SetObjectFieldValue(string hierarchyPath, string fieldOrPropertyName, object value, 
     bool waitForObject = true, int timeout = 60)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath to the object to set the field/property value. |
+| fieldOrPropertyName | The field or property name to set the value of. |
+| value | The value to set for the field/property. |
+| waitForObject | If TRUE, wait for the object to exist if it doesn't. |
+| timeout | The time to wait for the object to exist. |
+
+## Return Value
+
+TRUE if the field/property was successfully set to the value.
+
+## Examples
+
+```csharp
+  // Change the vector object value "newVec" for the object named Player1
+                gdio.common.objects.Vector3 newLocation = new gdio.common.objects.Vector3(10000, 10000, 10000);
+             SetValue("//*[@tag='Player1']", "newVec", newLocation);
 ```
 
 ## See Also

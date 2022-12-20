@@ -1,7 +1,24 @@
 # ApiClient.WaitForObject method
 
+Wait for an object to exist.
+
 ```csharp
 public bool WaitForObject(string hierarchyPath, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath of the object. |
+| timeout | The amount of time to wait for the object to exist. |
+
+## Return Value
+
+TRUE if the object exists within the alloted timeout.
+
+## Examples
+
+```csharp
+api.WaitForObject("//*[@name='Cube']"); //Waits for an object named "Cube" to exist
 ```
 
 ## See Also

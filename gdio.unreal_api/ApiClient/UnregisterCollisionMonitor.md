@@ -1,8 +1,15 @@
 # ApiClient.UnregisterCollisionMonitor method
 
+Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring.
+
 ```csharp
 public void UnregisterCollisionMonitor(string id, int timeout = 60)
 ```
+
+| parameter | description |
+| --- | --- |
+| id | The id retunred when creating the collision listener. |
+| timeout |  |
 
 ## See Also
 

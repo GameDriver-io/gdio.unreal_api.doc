@@ -1,7 +1,29 @@
 # ApiClient.GetObjectFieldValue&lt;T&gt; method
 
+This method returns the field or property value of an object.
+
 ```csharp
 public T GetObjectFieldValue<T>(string hierarchyPath, string fieldOrPropertyName, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| T | The Type of the field or property to be inspected. |
+| hierarchyPath | The HierarchyPath of the object and field/property to be inspected. |
+| fieldOrPropertyName | The field/property name to retreieve the value for/ |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+Returns an object of type T for the value or throws an Exception on error.
+
+## Examples
+
+// Searches for an object named 'Player1' and gets the value of a integer field names coin
+
+```csharp
+int numCoins = api.GetObjectFieldValue<int>("/Player1", "coinCount");
+ssert.IsTrue(coins > 0, "the player has no coins!"); //Passes if the Player object's "coin" field is > 0 
 ```
 
 ## See Also

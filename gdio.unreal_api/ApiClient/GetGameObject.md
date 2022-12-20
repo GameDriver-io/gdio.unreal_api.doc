@@ -1,7 +1,24 @@
 # ApiClient.GetGameObject method
 
+Get the UObject that evaluates from the provided HierarchyPath argument.
+
 ```csharp
 public LiteGameObject GetGameObject(string hierarchyPath, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+The matching UObject, if it exists.
+
+## Examples
+
+```csharp
+api.GetGameObject("//*[@name='MyObject']")
 ```
 
 ## See Also

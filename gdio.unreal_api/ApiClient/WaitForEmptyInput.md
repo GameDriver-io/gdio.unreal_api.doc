@@ -1,8 +1,14 @@
 # ApiClient.WaitForEmptyInput method
 
+Wait for an Empty Input event to be received.
+
 ```csharp
 public bool WaitForEmptyInput(int timeout = 30)
 ```
+
+| parameter | description |
+| --- | --- |
+| timeout | The time to wait for the event. |
 
 ## See Also
 

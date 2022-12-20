@@ -1,7 +1,23 @@
 # ApiClient.GetSceneName method
 
+Return the name of the current active scene.
+
 ```csharp
 public string GetSceneName(int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+The name of the scene as a string.
+
+## Examples
+
+```csharp
+string activeScene = api.GetSceneName();
 ```
 
 ## See Also

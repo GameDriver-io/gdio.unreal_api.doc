@@ -1,7 +1,25 @@
 # ApiClient.LoadLevel method
 
+This method loads the scene, defined by the scene name passed as an argument.
+
 ```csharp
 public bool LoadLevel(string levelName, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| sceneName | The name of the scene to load |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the request was successfully processed by the GameDriver agent.
+
+## Examples
+
+```csharp
+//Loads the FinalBoss scene
+            api.LoadScene("FinalBoss");
 ```
 
 ## See Also

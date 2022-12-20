@@ -1,7 +1,27 @@
 # ApiClient.Tap method (1 of 2)
 
+Tap the handheld device at the defined position.
+
 ```csharp
 public bool Tap(Vector2 position, int tapCount = 1, ulong frameCount = 5, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| position | The vector position to tap the device screen. |
+| tapCount | The number of taps that should be registered. |
+| frameCount | The number of frames to complete the tap input over. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent was able to process the request successfully.
+
+## Examples
+
+```csharp
+//Performs a single tap at position 0, 0 for 10 frames
+            api.Tap(new Vector2(0, 0), 1, 10); 
 ```
 
 ## See Also
@@ -13,8 +33,29 @@ public bool Tap(Vector2 position, int tapCount = 1, ulong frameCount = 5, int ti
 
 # ApiClient.Tap method (2 of 2)
 
+Tap the handheld device at the defined position.
+
 ```csharp
 public bool Tap(float x, float y, int tapCount = 1, ulong frameCount = 5, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| x | The X coordinate of the position to tap the device screen. |
+| y | The Y coordinate position to tap the device screen. |
+| tapCount | The number of taps that should be registered. |
+| frameCount | The number of frames to complete the tap input over. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent was able to process the request successfully.
+
+## Examples
+
+```csharp
+//Performs a single tap at position 0, 0 for 10 frames
+            api.Tap(0, 0, 1, 10);
 ```
 
 ## See Also

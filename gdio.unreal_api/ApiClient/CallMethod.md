@@ -1,8 +1,31 @@
 # ApiClient.CallMethod method (1 of 2)
 
+Use this function to execute a Void method on an object.
+
 ```csharp
 public bool CallMethod(string hierarchyPath, string methodName, object[] arguments, 
     int timeout = 600)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath for the object that the script component is attached to. |
+| methodName | The name of the method to call. (must be visible to blueprints to be called) |
+| arguments | An array of objects to pass as arguments to the method. |
+| timeout | The number of seconds to wait for a response that the request was processed. |
+
+## Return Value
+
+Returns a boolean based on the successful execution of the return type void, method.
+
+## Examples
+
+```csharp
+ // Call the "SetLightColor" (https://docs.unrealengine.com/5.0/en-US/BlueprintAPI/Rendering/Components/Light/SetLightColor/) method on a Light attached as a component to the Object named Player1
+               object[] lightTest = new object[2];
+               lightTest[0] = new gdio.common.objects.Color(1.0f, 1.0f, 0.0f, 1.0f); //the color
+               lightTest[1] = true; //the boolean for SRBG parameter
+               CallMethod<Vector3>("/Player1/fn:component('testLight')", "GetLightColor");
 ```
 
 ## See Also
@@ -14,9 +37,28 @@ public bool CallMethod(string hierarchyPath, string methodName, object[] argumen
 
 # ApiClient.CallMethod&lt;T&gt; method (2 of 2)
 
+Use this function to execute a method on an object.
+
 ```csharp
 public T CallMethod<T>(string hierarchyPath, string methodName, object[] arguments, 
     int timeout = 60)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath for the object that the script component is attached to. |
+| methodName | The name of the method to call. |
+| arguments | An array of objects to pass as arguments to the method. |
+| timeout | The number of seconds to wait for a response that the request was processed. |
+
+## Return Value
+
+Returns a deserialized object of type T. If T and the type of the returned object don't match, an exception will be thrown.
+
+## Examples
+
+```csharp
+gdio.common.objects.Color  lightColor = api.CallMethod<gdio.common.objects.Color>("/ThirdPersonCharacter_167/fn:component('testLight')", "GetLightColor", null);
 ```
 
 ## See Also

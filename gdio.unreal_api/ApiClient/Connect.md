@@ -1,7 +1,25 @@
 # ApiClient.Connect method
 
+Use this function to connect to an Unreal game with GameDriver Agent configured and active. This function can connect to the unreal editor or a Standalone deployment of a game.
+
 ```csharp
 public void Connect(string hostname, int port = 15505, int timeout = 60)
+```
+
+| parameter | description |
+| --- | --- |
+| hostname | The hostname of the machine running the game. |
+| port | The configured port that the GameDriver agent is configured to use. |
+| timeout | The amount of time in seconds to wait for connectivity to establish with the game. |
+
+## Examples
+
+```csharp
+//Connects to a local instance of the Unreal editor with the default port of 15505 configured.
+            api.Connect("localhost");
+            
+            //Connects to an instance of Unreal running on the machine with IP address 10.0.0.2, port 15505, where the Unreal editor is already in Play mode
+            api.Connect("10.0.0.20", 15505, 60);
 ```
 
 ## See Also

@@ -1,8 +1,14 @@
 # ApiClient.SetTimescale method
 
+Use this function to set the play speed of the game. Can be used to speed up or slow down the game in order to improve test execution time. (https://docs.unity3d.com/ScriptReference/Time-timeScale.html)
+
 ```csharp
 public bool SetTimescale(float val, int timeout = 10)
 ```
+
+| parameter | description |
+| --- | --- |
+| val | The coefficient of time. |
 
 ## See Also
 

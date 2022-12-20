@@ -1,8 +1,26 @@
 # ApiClient.RegisterCollisionMonitor method
 
+Register a collision monitor to recieve collision events on an object.
+
 ```csharp
 public string RegisterCollisionMonitor(string hierarchyPath, 
     UNREAL_HIT_EVENT type = UNREAL_HIT_EVENT.HIT_EVENT, int timeout = 5)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath for the object to rotate. |
+| type | Type of hit (0 hit, 1 overlap, 2 overlapend) |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+String returned is the event identifier
+
+## Examples
+
+```csharp
+api.RegisterUnrealCollisionMonitor("//*[@name='Cylinder']");
 ```
 
 ## See Also

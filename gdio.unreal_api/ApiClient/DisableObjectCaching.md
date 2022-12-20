@@ -1,7 +1,23 @@
 # ApiClient.DisableObjectCaching method
 
+Disable the use of object caching when doing HierarchyPath object resolution.
+
 ```csharp
 public bool DisableObjectCaching(int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
+
+## Examples
+
+```csharp
+api.DisableObjectCaching();
 ```
 
 ## See Also

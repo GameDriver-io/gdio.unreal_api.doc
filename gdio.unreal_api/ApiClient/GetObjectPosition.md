@@ -1,9 +1,30 @@
 # ApiClient.GetObjectPosition method
 
+Return the position of a specific object.
+
 ```csharp
 public Vector3 GetObjectPosition(string objectHierarchyPath, 
     CoordinateConversion cordSpace = CoordinateConversion.None, string cameraHierarchyPath = "", 
     int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| objectHierarchyPath | The HierarchyPath of the object to return the position of. |
+| cordSpace | The coorindate space conversion to perform on the position before returning it. See CoordinateConversion for more information. |
+| cameraHierarchyPath | Unused |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+The Vector3 position of the specific object.
+
+## Examples
+
+```csharp
+ // spot is set to the Vector3 value of the object position on screen
+            Vector3 spot = api.GetObjectPosition("//*[@name = 'Player1']",
+                CoordinateConversion.WorldToScreenPoint);
 ```
 
 ## See Also

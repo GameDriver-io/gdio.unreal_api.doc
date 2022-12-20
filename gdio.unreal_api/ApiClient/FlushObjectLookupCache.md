@@ -1,7 +1,23 @@
 # ApiClient.FlushObjectLookupCache method
 
+If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups.
+
 ```csharp
 public bool FlushObjectLookupCache(int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
+
+## Examples
+
+```csharp
+api.FlushObjectLookupCache();
 ```
 
 ## See Also

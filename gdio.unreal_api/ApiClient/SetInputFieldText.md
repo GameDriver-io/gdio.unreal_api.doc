@@ -1,8 +1,28 @@
 # ApiClient.SetInputFieldText method
 
+Set the text of a TextBox or EditableText
+
 ```csharp
 public bool SetInputFieldText(string hierarchyPath, string value, bool waitForObject = true, 
     int timeout = 60)
+```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The HierarchyPath to the TextBox or EditableText |
+| value | The text value to set in the field. |
+| waitForObject | If TRUE, wait for the object to exist if it doesn't. |
+| timeout | The time to wait for the object to exist. |
+
+## Return Value
+
+TRUE if the GameDriver agent was able to successfully set the TextBox or EditableText text.
+
+## Examples
+
+```csharp
+//Sets the TextBox component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
+            api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
 ```
 
 ## See Also

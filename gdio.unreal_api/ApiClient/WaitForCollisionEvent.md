@@ -1,7 +1,24 @@
 # ApiClient.WaitForCollisionEvent method
 
+Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with !:GetNextCollisionEvent(string) to see if it returns null to see if an event was missed.
+
 ```csharp
 public Hit WaitForCollisionEvent(string eventId, int timeout = 10)
+```
+
+| parameter | description |
+| --- | --- |
+| eventId | The eventId received from the !:RegisterCollisionMonitor(string, int) call. |
+| timeout | The number of seconds to wait for a collision event to be fired. |
+
+## Return Value
+
+The Collision contains information about the collision. NULL is returned if the request timesout.
+
+## Examples
+
+```csharp
+api.WaitForCollisionEvent{object}(eventId);
 ```
 
 ## See Also

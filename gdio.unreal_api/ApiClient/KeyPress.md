@@ -1,7 +1,32 @@
 # ApiClient.KeyPress method (1 of 2)
 
+Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND)
+
 ```csharp
 public bool KeyPress(string key, ulong numberOfFrames = 10)
+```
+
+| parameter | description |
+| --- | --- |
+| key | An string representing the key to press. |
+| numberOfFrames | The number of frames to press and hold the keys for. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
+
+## Examples
+
+```csharp
+//Send events for the common W,A,S,D keys, maybe as input to a player controller. 
+            api.KeyPress("W", 100);
+            api.Wait(300);
+            api.KeyPress("A", 100);
+            api.Wait(300);
+            api.KeyPress("S", 100);
+            api.Wait(300);
+            api.KeyPress("D", 100);
+            api.Wait(3000);
 ```
 
 ## See Also
@@ -13,9 +38,38 @@ public bool KeyPress(string key, ulong numberOfFrames = 10)
 
 # ApiClient.KeyPress method (2 of 2)
 
+Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND)
+
 ```csharp
 public bool KeyPress(string[] keys, ulong numberOfFrames, string[] modifiers = null, 
     ulong modifierNumberOfFrames = 3, int delayAfterModifiersMsec = 500, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| keys | An array of keys(!:KeyCode) to press. |
+| numberOfFrames | The number of frames to press and hold the keys for. |
+| modifiers | An array of modifiers()!:KeyCode to press. |
+| modifierNumberOfFrames | The number of frames to hold the modifiers down for, before pressing the keys. |
+| delayAfterModifiersMsec | The delay to wait between holding the modifies and pressing the keys. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+TRUE if the GameDriver agent successfully processed the request.
+
+## Examples
+
+```csharp
+//Press the down, left, up, then right keys in sequence
+            api.KeyPress(new KeyCode[] { KeyCode.DownArrow}, 100);
+            api.Wait(300);
+            api.KeyPress(new KeyCode[] { KeyCode.LeftArrow}, 100);
+            api.Wait(300);
+            api.KeyPress(new KeyCode[] { KeyCode.UpArrow }, 100);
+            api.Wait(300);
+            api.KeyPress(new KeyCode[] { KeyCode.RightArrow }, 100);
+            api.Wait(3000);
 ```
 
 ## See Also
