@@ -4,7 +4,7 @@ Use this function to interact with an object in game using a mouse double-click,
 
 ```csharp
 public bool DoubleClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulong clickFrameCount, 
-    string[] keys = null, ulong keysNumberOfFrames = 5, string[] modifiers = null, 
+    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, KeyCode[] modifiers = null, 
     ulong modifiersNumberOfFrames = 3, int delayAfterModifiersMsec = 500, int timeout = 30)
 ```
 
@@ -13,10 +13,10 @@ public bool DoubleClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulo
 | buttonId | The mouse button to use for the double click operation. See MouseButtons. |
 | hierarchyPath | The HierarchyPath for the GameObject to perform a double-click on. |
 | clickFrameCount | The number of frames to double-click the specific object. |
-| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
-| keys | An array of !:KeyCode keys to press during the click operation. |
+| cameraHierarchyPath | Unused |
+| keys | An array of [`KeyCode`](../KeyCode.md) keys to press during the click operation. |
 | keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | An array of !:KeyCode modifier keys to press during the click operation. |
+| modifiers | An array of [`KeyCode`](../KeyCode.md) modifier keys to press during the click operation. |
 | modifiersNumberOfFrames | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | delayAfterModifiersMsec | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
 | timeout | The number of seconds to wait for a response that the DoubleClickObjectEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
@@ -38,6 +38,7 @@ TRUE if the GameDriver agent successfully processed the request.
 
 ## See Also
 
+* enum [KeyCode](../KeyCode.md)
 * class [ApiClient](../ApiClient.md)
 * namespace [gdio.unreal_api](../../gdio.unreal_api.md)
 

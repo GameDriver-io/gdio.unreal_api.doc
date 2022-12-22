@@ -1,6 +1,6 @@
 # ApiClient.WaitForCollisionEvent method
 
-Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. Check with !:GetNextCollisionEvent(string) to see if it returns null to see if an event was missed.
+Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again.
 
 ```csharp
 public Hit WaitForCollisionEvent(string eventId, int timeout = 10)
