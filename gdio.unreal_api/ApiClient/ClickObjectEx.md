@@ -13,7 +13,7 @@ public bool ClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulong cli
 | buttonId | The mouse button to use for the click operation. See MouseButtons. |
 | hierarchyPath | The HierarchyPath for the GameObject to perform a click on. |
 | clickFrameCount | The number of frames to click the specific object. |
-| cameraHierarchyPath | Unused |
+| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
 | keys | An array of !:KeyCode keys to press during the click operation. |
 | keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
 | modifiers | An array of !:KeyCode modifier keys to press during the click operation. |

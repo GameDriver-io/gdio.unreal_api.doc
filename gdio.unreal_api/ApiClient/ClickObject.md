@@ -12,7 +12,7 @@ public bool ClickObject(MouseButtons buttonId, string hierarchyPath, ulong frame
 | buttonId | The mouse button to use for the click operation. See MouseButtons. |
 | hierarchyPath | The HierarchyPath for the GameObject to perform a click on. |
 | frameCount | The number of frames to click the specific object. |
-| cameraHierarchyPath | Unused |
+| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
 | timeout | The number of frames to hold the keys down before clicking. Total press frame count is keyFrames + frames. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ## Examples

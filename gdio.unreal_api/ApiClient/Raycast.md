@@ -10,7 +10,7 @@ public RaycastResult[] Raycast(Vector3 raycastPoint, string cameraHierarchyPath 
 | parameter | description |
 | --- | --- |
 | raycastPoint | The vector to perform a raycast to. |
-| cameraHierarchyPath | Unused |
+| cameraHierarchyPath | The HierarchyPath for the UnityEngine.Camera to use as a Raycast reference. If the Camera is string.Empty, the Camera.main is used |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
