@@ -1,4 +1,4 @@
-# ApiClient.Click method (1 of 2)
+# ApiClient.Click method (1 of 3)
 
 Use this function to perform in-game mouse-clicks.
 
@@ -26,7 +26,7 @@ api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30); //Clicks the left mous
 
 ---
 
-# ApiClient.Click method (2 of 2)
+# ApiClient.Click method (2 of 3)
 
 Use this function to perform in-game mouse-clicks.
 
@@ -46,6 +46,19 @@ public bool Click(MouseButtons buttonId, float x, float y, ulong clickFrameCount
 
 ```csharp
 api.Click(MouseButtons.LEFT, 0, 0, 30, 30); //Clicks the left mouse button at 0,0 for 30 frames
+```
+
+## See Also
+
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unreal_api](../../gdio.unreal_api.md)
+
+---
+
+# ApiClient.Click method (3 of 3)
+
+```csharp
+public bool Click(MouseButtons buttonId, int x, int y, ulong clickFrameCount, int timeout = 600)
 ```
 
 ## See Also

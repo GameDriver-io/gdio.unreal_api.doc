@@ -1,5 +1,7 @@
 # ApiClient class
 
+This class contains the api calls that allow you to interact with your game.
+
 ```csharp
 public class ApiClient
 ```
@@ -13,11 +15,12 @@ public class ApiClient
 | [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a Void method on an object. |
 | [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](ApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
-| [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (2 methods) |
+| [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (3 methods) |
 | [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to perform in-game mouse-clicks combined with key press operations. The total frame count of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames (2 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
 | [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. |
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to an Unreal game with GameDriver Agent configured and active. This function can connect to the unreal editor or a Standalone deployment of a game. |
+| [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a VR device (OculusHMD, etc). |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Disable the use of object caching when doing HierarchyPath object resolution. |
 | [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
 | [DoubleClick](ApiClient/DoubleClick.md)(…) | Use this function to perform in-game mouse double-clicks. (2 methods) |
@@ -39,10 +42,13 @@ public class ApiClient
 | [MouseMoveToObject](ApiClient/MouseMoveToObject.md)(…) | Move the mouse to the center of a specific object, identified by the HierarchyPath. |
 | [MouseMoveToPoint](ApiClient/MouseMoveToPoint.md)(…) | Move the mouse to the destination vector. |
 | [NavAgentMoveToPoint](ApiClient/NavAgentMoveToPoint.md)(…) | Move a NavAgent to a destination point. |
+| [QuaternionInputEvent](ApiClient/QuaternionInputEvent.md)(…) | Use this function to send arbitrary Quaternion Event states to the game. |
 | [Raycast](ApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
 | [ReConnect](ApiClient/ReConnect.md)(…) | Use this function to disconnect and reconnect the API client to the Game. Useful after loading a new Scene when the agent is reloaded and requires reconnection. |
 | [RegisterCollisionMonitor](ApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |
+| [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Use this function to remove all devices that have the usage tag "GDIO". |
 | [RotateObject](ApiClient/RotateObject.md)(…) | Rotate an object defined by the HierarchyPath and rotated by a Quaternion. [https://scriptinghelpers.org/blog/how-to-think-about-quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions) for more information. (4 methods) |
+| [Scroll](ApiClient/Scroll.md)(…) | Use this function to simulate mouse wheel scrolling. |
 | [SetInputFieldText](ApiClient/SetInputFieldText.md)(…) | Set the text of a TextBox or EditableText |
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
 | [SetTimescale](ApiClient/SetTimescale.md)(…) | Use this function to set the play speed of the game. Can be used to speed up or slow down the game in order to improve test execution time. (https://docs.unity3d.com/ScriptReference/Time-timeScale.html) |
@@ -50,6 +56,9 @@ public class ApiClient
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](ApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
+| [Vector2InputEvent](ApiClient/Vector2InputEvent.md)(…) | Use this function to send arbitrary Vector2 Event states to the game. |
+| [Vector3InputEvent](ApiClient/Vector3InputEvent.md)(…) | Use this function to send arbitrary Vector3 Event states to the game. |
+| [VRInput](ApiClient/VRInput.md)(…) | Convenience function to send arbitrary Vector3 with Quaternion Event states to the game for the HUD or controllers |
 | [Wait](ApiClient/Wait.md)(…) |  |
 | [WaitForCollisionEvent](ApiClient/WaitForCollisionEvent.md)(…) | Wait for a collision event to fire on an element that is being monitored for collisions. If the method has been called before, there is the potential that another event was recieved before waiting on the event again. |
 | [WaitForEmptyInput](ApiClient/WaitForEmptyInput.md)(…) | Wait for an Empty Input event to be received. |
