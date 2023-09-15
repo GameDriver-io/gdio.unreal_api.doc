@@ -12,7 +12,7 @@ public bool TapObject(string hierarchyPath, int tapCount = 1, ulong frameCount =
 | hierarchyPath | The HierarchyPath of the object to tap. |
 | tapCount | The number of taps that should be registered. |
 | frameCount | The number of frames to complete the tap input over. |
-| cameraHierarchyPath | The HierarchyPath to the Camera rendering the object. An empty string uses Camera.main |
+| cameraHierarchyPath | not used |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value

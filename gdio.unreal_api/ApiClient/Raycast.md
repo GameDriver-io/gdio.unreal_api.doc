@@ -10,7 +10,7 @@ public RaycastResult[] Raycast(Vector3 raycastPoint, string cameraHierarchyPath 
 | parameter | description |
 | --- | --- |
 | raycastPoint | The vector to perform a raycast to. |
-| cameraHierarchyPath | Unused |
+| cameraHierarchyPath | The object to start raycasting from. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
@@ -20,8 +20,8 @@ Returns an array of RaycastResult.
 ## Examples
 
 ```csharp
-// Racast to an object named "Ellen"
-             RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//*[@name='Ellen']"));
+// Racast to an object named "my_Pawn"
+             RaycastResult[] rr = api.Raycast(api.GetObjectPosition("//ThirdPersonCharacter_167"), "//*[contains(@name,'MyPawn_')]");
              
              foreach (var res in rr)
              {
@@ -29,14 +29,13 @@ Returns an array of RaycastResult.
              }
             
              // Output
-             // [RaycastResult]
-             // Type: Physics
-             // Tag: Untagged
-             // Name: Plane
-             // HasButton: False
-             // Point: (-5.217863, 0, -0.5770187)
-             // Type Name: UnityEngine.GameObject
-             
+                [RaycastResult]
+            Type: MyPawn
+            Tag: 
+            Name: MyPawn_1
+            HasButton: False
+            Point: (-350, 0, 180)
+             Name: FHitResult
 ```
 
 ## See Also

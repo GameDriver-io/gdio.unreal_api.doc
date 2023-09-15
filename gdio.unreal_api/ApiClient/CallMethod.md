@@ -4,12 +4,12 @@ Use this function to execute a Void method on an object.
 
 ```csharp
 public bool CallMethod(string hierarchyPath, string methodName, object[] arguments, 
-    int timeout = 600)
+    int timeout = 60)
 ```
 
 | parameter | description |
 | --- | --- |
-| hierarchyPath | The HierarchyPath for the object that the script component is attached to. |
+| hierarchyPath | The HierarchyPath of the object to call the void method on |
 | methodName | The name of the method to call. (must be visible to blueprints to be called) |
 | arguments | An array of objects to pass as arguments to the method. |
 | timeout | The number of seconds to wait for a response that the request was processed. |
@@ -25,7 +25,7 @@ Returns a boolean based on the successful execution of the return type void, met
                object[] lightTest = new object[2];
                lightTest[0] = new gdio.common.objects.Color(1.0f, 1.0f, 0.0f, 1.0f); //the color
                lightTest[1] = true; //the boolean for SRBG parameter
-               CallMethod<Vector3>("/Player1/fn:component('testLight')", "GetLightColor");
+               api.CallMethod("/Player1/fn:component('testLight')", "SetLightColor", lightTest);
 ```
 
 ## See Also

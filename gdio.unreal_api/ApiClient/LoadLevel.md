@@ -8,7 +8,7 @@ public bool LoadLevel(string levelName, int timeout = 30)
 
 | parameter | description |
 | --- | --- |
-| sceneName | The name of the scene to load |
+| sceneName | The name of the scene to load (using https://docs.unrealengine.com/5.2/en-US/API/Runtime/Engine/Engine/UWorld/ServerTravel/) |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
@@ -18,7 +18,7 @@ TRUE if the request was successfully processed by the GameDriver agent.
 ## Examples
 
 ```csharp
-//Loads the FinalBoss scene
+//Loads the FinalBoss map
             api.LoadScene("FinalBoss");
 ```
 

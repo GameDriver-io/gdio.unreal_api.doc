@@ -1,6 +1,6 @@
 # ApiClient.GetGameObject method
 
-Get the UObject that evaluates from the provided HierarchyPath argument.
+Get the LiteGameObject representing the UObject matching the provided HierarchyPath argument
 
 ```csharp
 public LiteGameObject GetGameObject(string hierarchyPath, int timeout = 30)

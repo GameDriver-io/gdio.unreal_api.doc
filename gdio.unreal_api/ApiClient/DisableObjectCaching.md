@@ -1,6 +1,6 @@
 # ApiClient.DisableObjectCaching method
 
-Disable the use of object caching when doing HierarchyPath object resolution.
+Deprecated. Disable the use of object caching when doing HierarchyPath object resolution.
 
 ```csharp
 public bool DisableObjectCaching(int timeout = 30)
