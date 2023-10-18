@@ -1,6 +1,6 @@
 # ApiClient.GetObjectList method (1 of 2)
 
-This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt;
+This method returns of a list of all Unreal UObject Objects in the World.
 
 ```csharp
 public List<LiteGameObject> GetObjectList(bool includeHPath = false, int timeout = 30)
@@ -8,7 +8,7 @@ public List<LiteGameObject> GetObjectList(bool includeHPath = false, int timeout
 
 | parameter | description |
 | --- | --- |
-| includeHPath | Generate full path for GameObjects |
+| includeHPath | Generate full path for each object |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
@@ -44,7 +44,7 @@ foreach (var obj in objects)
 
 # ApiClient.GetObjectList method (2 of 2)
 
-This method returns of a list of all GameObjects as returned by !:UnityEngine.GameObject.FindObjectsOfType(Type), where Type is UnityEngine.GameObject./&gt;
+This method returns of a list of all GameObjects matching the HierarchyPath
 
 ```csharp
 public List<LiteGameObject> GetObjectList(string hierarchyPath, bool includeHPath = false, 
@@ -54,7 +54,7 @@ public List<LiteGameObject> GetObjectList(string hierarchyPath, bool includeHPat
 | parameter | description |
 | --- | --- |
 | hierarchyPath | HierarchyPath of objects to be returned |
-| includeHPath | Generate full path for GameObjects |
+| includeHPath | Generate full path for GameObjects, or not |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
@@ -66,18 +66,18 @@ This method returns a IList of LiteGameObject. LiteGameObject is a slimmer repre
 //Print a list of the scene objects
 
 ```csharp
-System.Collections.Generic.List<LiteGameObject> objects = api.GetObjectList();
+System.Collections.Generic.List<LiteGameObject> enemies = api.GetObjectList("/*[contains(@name,'enemy')]");
 
 //Test whether the list is null
-Assert.IsNotNull(objects, "GetObjectList failed!");
+Assert.IsNotNull(enemies, "GetObjectList failed!");
 
 //Print a full object list
-foreach (var obj in objects)
+foreach (var obj in enemies)
 {
-    Console.WriteLine("Object Name: " + obj.Name);
-    Console.WriteLine("Object Tag: " + obj.Tag);
-    Console.WriteLine("Object Position: " + obj.Position);
-    Console.WriteLine($"Object Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
+    Console.WriteLine("Enemy Name: " + obj.Name);
+    Console.WriteLine("Enemy Tag: " + obj.Tag);
+    Console.WriteLine("Enemy Position: " + obj.Position);
+    Console.WriteLine($"Enemy Rotation (w): {obj.Rotation.w}, (x): {obj.Rotation.x}, (y): {obj.Rotation.x}, (z): {obj.Rotation.z}");
 }
 ```
 

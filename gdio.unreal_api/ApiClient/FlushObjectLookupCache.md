@@ -1,6 +1,6 @@
 # ApiClient.FlushObjectLookupCache method
 
-If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups.
+Deprecated. If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups.
 
 ```csharp
 public bool FlushObjectLookupCache(int timeout = 30)

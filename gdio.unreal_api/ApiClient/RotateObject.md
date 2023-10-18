@@ -33,7 +33,7 @@ api.RotateObject("//*[@name='Cylinder']", new Quaternion(0, 0, 2, 2), true);
 
 # ApiClient.RotateObject method (2 of 4)
 
-Rotate an object defined by the HierarchyPath and rotated by Eulers. [https://docs.unity3d.com/ScriptReference/Transform.Rotate.html](https://docs.unity3d.com/ScriptReference/Transform.Rotate.html) for more information.
+Rotate an object defined by the HierarchyPath and rotated by Eulers.
 
 ```csharp
 public bool RotateObject(string hierarchyPath, Vector3 eulers, Space relativeTo = Space.Self, 

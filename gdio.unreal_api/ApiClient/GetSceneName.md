@@ -12,7 +12,7 @@ public string GetSceneName(int timeout = 30)
 
 ## Return Value
 
-The name of the scene as a string.
+The name of the scene as a string. See https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Engine/UWorld/GetMapName/
 
 ## Examples
 

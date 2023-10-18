@@ -1,6 +1,6 @@
 # ApiClient.SetTimescale method
 
-Use this function to set the play speed of the game. Can be used to speed up or slow down the game in order to improve test execution time. (https://docs.unity3d.com/ScriptReference/Time-timeScale.html)
+Use this function to set the play speed of the game. Can be used to speed up or slow down the game in order to improve test execution time. (see https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/Kismet/UGameplayStatics/SetGlobalTimeDilation/)
 
 ```csharp
 public bool SetTimescale(float val, int timeout = 10)
@@ -9,6 +9,14 @@ public bool SetTimescale(float val, int timeout = 10)
 | parameter | description |
 | --- | --- |
 | val | The coefficient of time. |
+
+## Examples
+
+```csharp
+api.SetTimescale(0.1f);//set time scale to 10% (slow)
+//do some things while slow...
+api.SetTimescale(1.0f);//set speedback to normal.
+```
 
 ## See Also
 

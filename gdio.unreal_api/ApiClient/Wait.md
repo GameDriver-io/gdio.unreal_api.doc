@@ -1,8 +1,14 @@
 # ApiClient.Wait method
 
+Sleep the api client for a certain number of milliseconds. See System.Threading.Thread.Sleep
+
 ```csharp
 public void Wait(int milliseconds = 1000)
 ```
+
+| parameter | description |
+| --- | --- |
+| milliseconds | The number of milliseconds to sleep for. |
 
 ## See Also
 

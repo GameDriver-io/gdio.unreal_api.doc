@@ -22,8 +22,8 @@ TRUE if the object exists with the specified value in the alloted timeout.
 ## Examples
 
 ```csharp
-//Waits for the value of the TextMeshProUGUI input field with the name "Text" to be "America"
-            api.WaitForObjectValue("//*[@name='Text']/fn:component('TMPro.TextMeshProUGUI')", "text", "America");
+//Waits for the value of the testString field of the //Parent object to be "abc"
+            api.WaitForObjectValue("//Parent", "testString", "abc");
 ```
 
 ## See Also
