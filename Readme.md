@@ -6,6 +6,10 @@ The documentation is divided into the main [ApiClient](https://github.com/GameDr
 
 You will note there are two sets of KeyCode values:One for Unreal 4.X and another for those using Unreal 5 and greater. Be sure to use the KeyCode and api version that matches your Unreal version or you may experience mapping issues on your inputs (especially in VR). 
 
+
+For users using Gamedriver with the UnrealAutomation Testing Framework, you can see the api documentation [Unreal Automated Testing GameDriver Api](https://github.com/GameDriver-io/gdio.unreal_api.doc/blob/main/class_u_g_d_i_o_api.md)
+
+
 If you find an issue with this documentation, please let us know in the Issues tab, or by sending an email to support@gamedriver.io
 
 Thank you for choosing GameDriver for your test automation needs!
