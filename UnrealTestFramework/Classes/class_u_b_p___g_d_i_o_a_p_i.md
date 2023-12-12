@@ -15,28 +15,28 @@ Inherits from UObject
 
 |                | Name           |
 | -------------- | -------------- |
-| TArray< UObject * > | **[GetObjectList](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getobjectlist)**(FString hierarchyPath)<br>This method returns a TArray of all Unreal UObject matching the passed in HPath.  |
-| UObject * | **[GetGameObject](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getgameobject)**(FString hierarchyPath)<br>Get the Object Reference matching the provided HierarchyPath argument, or NULL.  |
-| FVector | **[GetObjectPositionWithHPath](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getobjectpositionwithhpath)**(FString HPath, CoordinateConversionTypes coordinateSpace, bool & valid)<br>Return the position of a specific object.The position returned is in worldspace coordinates for an actor or a component and screenspace coordinates for widgets.  |
-| FVector | **[GetObjectPosition](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getobjectposition)**(UObject * obj, CoordinateConversionTypes coordinateSpace, bool & valid)<br>Return the position of a specific object.The position returned is in worldspace coordinates for an actor or a component and screenspace coordinates for widgets.  |
-| bool | **[GetIntFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getintfieldvalue)**(FString hierarchyPath, FString field, int & value) |
-| bool | **[GetStringFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getstringfieldvalue)**(FString hierarchyPath, FString field, FString & value) |
-| bool | **[GetBoolFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getboolfieldvalue)**(FString hierarchyPath, FString field, bool & value) |
-| bool | **[GetDoubleFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-getdoublefieldvalue)**(FString hierarchyPath, FString field, double & value) |
-| bool | **[SetIntFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-setintfieldvalue)**(FString hierarchyPath, FString field, int value) |
-| bool | **[SetStringFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-setstringfieldvalue)**(FString hierarchyPath, FString field, FString value) |
-| bool | **[SetFloatFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-setfloatfieldvalue)**(FString hierarchyPath, FString field, double value) |
-| bool | **[SetBoolFieldValue](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-setboolfieldvalue)**(FString hierarchyPath, FString field, bool value) |
-| bool | **[KeyPress](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-keypress)**(TArray< FKey > keys, int numberOfFrames)<br>Use this function to send arbitrary button states to the game.  |
-| bool | **[Click](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-click)**(FKey mouseButton, FVector2D loc, int frameCount =30)<br>Use this function to perform in-game mouse-clicks.  |
-| bool | **[ClickObjectFromHPath](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-clickobjectfromhpath)**(FKey mouseButton, FString HPath, int frameCount =30)<br>Use this function to interact with an in-game object using mouse-clicks.  |
-| bool | **[ClickObject](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-clickobject)**(FKey mouseButton, UObject * obj, int frameCount =30)<br>Use this function to interact with an in-game object using mouse-clicks.  |
-| FString | **[getHierarchyPath](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-gethierarchypath)**(UObject * obj, GDIO_HPATH_TYPES type)<br>Use this function to get the HierarchyPath of any vaid UObject.  |
-| bool | **[MouseMovetoPoint](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-mousemovetopoint)**(FVector2D destination, int frameCount, FVector2D origin)<br>Move the mouse to the destination vector.  |
-| bool | **[MouseMovetoObject](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-mousemovetoobject)**(UObject * obj, int frameCount =30)<br>Move the mouse to the center of a specific object.  |
-| bool | **[MouseMovetoObjectFromHPath](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-mousemovetoobjectfromhpath)**(FString HPath, int frameCount =30)<br>Move the mouse to the center of a specific object, identified by the HPath.  |
-| bool | **[MouseDrag](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-mousedrag)**(FKey MouseButton, FVector2D destination, int frameCount, FVector2D origin)<br>Perform a mouse drag operation.  |
-| bool | **[FloatInputEvent](Classes/class_u_b_p___g_d_i_o_a_p_i.md#function-floatinputevent)**(FKey key, double value)<br>Use this function to simulate a KeyAxis float input (axis). Pass 0 to stop sending the event.  |
+| TArray< UObject * > | **[GetObjectList](class_u_b_p___g_d_i_o_a_p_i.md#function-getobjectlist)**(FString hierarchyPath)<br>This method returns a TArray of all Unreal UObject matching the passed in HPath.  |
+| UObject * | **[GetGameObject](class_u_b_p___g_d_i_o_a_p_i.md#function-getgameobject)**(FString hierarchyPath)<br>Get the Object Reference matching the provided HierarchyPath argument, or NULL.  |
+| FVector | **[GetObjectPositionWithHPath](class_u_b_p___g_d_i_o_a_p_i.md#function-getobjectpositionwithhpath)**(FString HPath, CoordinateConversionTypes coordinateSpace, bool & valid)<br>Return the position of a specific object.The position returned is in worldspace coordinates for an actor or a component and screenspace coordinates for widgets.  |
+| FVector | **[GetObjectPosition](class_u_b_p___g_d_i_o_a_p_i.md#function-getobjectposition)**(UObject * obj, CoordinateConversionTypes coordinateSpace, bool & valid)<br>Return the position of a specific object.The position returned is in worldspace coordinates for an actor or a component and screenspace coordinates for widgets.  |
+| bool | **[GetIntFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-getintfieldvalue)**(FString hierarchyPath, FString field, int & value) |
+| bool | **[GetStringFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-getstringfieldvalue)**(FString hierarchyPath, FString field, FString & value) |
+| bool | **[GetBoolFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-getboolfieldvalue)**(FString hierarchyPath, FString field, bool & value) |
+| bool | **[GetDoubleFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-getdoublefieldvalue)**(FString hierarchyPath, FString field, double & value) |
+| bool | **[SetIntFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-setintfieldvalue)**(FString hierarchyPath, FString field, int value) |
+| bool | **[SetStringFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-setstringfieldvalue)**(FString hierarchyPath, FString field, FString value) |
+| bool | **[SetFloatFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-setfloatfieldvalue)**(FString hierarchyPath, FString field, double value) |
+| bool | **[SetBoolFieldValue](class_u_b_p___g_d_i_o_a_p_i.md#function-setboolfieldvalue)**(FString hierarchyPath, FString field, bool value) |
+| bool | **[KeyPress](class_u_b_p___g_d_i_o_a_p_i.md#function-keypress)**(TArray< FKey > keys, int numberOfFrames)<br>Use this function to send arbitrary button states to the game.  |
+| bool | **[Click](class_u_b_p___g_d_i_o_a_p_i.md#function-click)**(FKey mouseButton, FVector2D loc, int frameCount =30)<br>Use this function to perform in-game mouse-clicks.  |
+| bool | **[ClickObjectFromHPath](class_u_b_p___g_d_i_o_a_p_i.md#function-clickobjectfromhpath)**(FKey mouseButton, FString HPath, int frameCount =30)<br>Use this function to interact with an in-game object using mouse-clicks.  |
+| bool | **[ClickObject](class_u_b_p___g_d_i_o_a_p_i.md#function-clickobject)**(FKey mouseButton, UObject * obj, int frameCount =30)<br>Use this function to interact with an in-game object using mouse-clicks.  |
+| FString | **[getHierarchyPath](class_u_b_p___g_d_i_o_a_p_i.md#function-gethierarchypath)**(UObject * obj, GDIO_HPATH_TYPES type)<br>Use this function to get the HierarchyPath of any vaid UObject.  |
+| bool | **[MouseMovetoPoint](class_u_b_p___g_d_i_o_a_p_i.md#function-mousemovetopoint)**(FVector2D destination, int frameCount, FVector2D origin)<br>Move the mouse to the destination vector.  |
+| bool | **[MouseMovetoObject](class_u_b_p___g_d_i_o_a_p_i.md#function-mousemovetoobject)**(UObject * obj, int frameCount =30)<br>Move the mouse to the center of a specific object.  |
+| bool | **[MouseMovetoObjectFromHPath](class_u_b_p___g_d_i_o_a_p_i.md#function-mousemovetoobjectfromhpath)**(FString HPath, int frameCount =30)<br>Move the mouse to the center of a specific object, identified by the HPath.  |
+| bool | **[MouseDrag](class_u_b_p___g_d_i_o_a_p_i.md#function-mousedrag)**(FKey MouseButton, FVector2D destination, int frameCount, FVector2D origin)<br>Perform a mouse drag operation.  |
+| bool | **[FloatInputEvent](class_u_b_p___g_d_i_o_a_p_i.md#function-floatinputevent)**(FKey key, double value)<br>Use this function to simulate a KeyAxis float input (axis). Pass 0 to stop sending the event.  |
 
 ## Public Functions Documentation
 
