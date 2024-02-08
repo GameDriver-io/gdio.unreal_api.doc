@@ -1,6 +1,6 @@
 # ApiClient.GetObjectPosition method
 
-Return the position of a specific object.
+Return the position of a specific object.The position returned is in worldspace coordinates for an actor or a component and screenspace coordinates for widgets.
 
 ```csharp
 public Vector3 GetObjectPosition(string objectHierarchyPath, 

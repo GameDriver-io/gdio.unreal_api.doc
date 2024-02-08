@@ -9,7 +9,7 @@ public bool Vector2InputEvent(string inputControlPath, Vector2 value, ulong numb
 
 | parameter | description |
 | --- | --- |
-| inputControlPath | The Input Control Path for the New Input System |
+| inputControlPath | The EKey name of the Input as string. |
 | value | Value of the Vector2 event |
 | numberOfFrames | The number of frames to press and hold the axis for. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
@@ -21,7 +21,8 @@ TRUE if the GameDriver agent successfully processed the request.
 ## Examples
 
 ```csharp
-api.Vector2InputEvent("Right", new Vector2(0, 1), 2); //Move the right joystick up. 
+//Move the left joystick when enhanced input is enabled.
+api.Vector2InputEvent("Gamepad_Left2D", new Vector2(-3.901433f, -1.902539f)); // 13780
 ```
 
 ## See Also

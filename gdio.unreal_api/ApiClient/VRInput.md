@@ -4,7 +4,7 @@ Convenience function to send arbitrary Vector3 with Quaternion Event states to t
 
 ```csharp
 public bool VRInput(string VRdevice, Vector3 position, Quaternion orientation, int index = 0, 
-    int timeout = 30)
+    int timeout = 10)
 ```
 
 | parameter | description |

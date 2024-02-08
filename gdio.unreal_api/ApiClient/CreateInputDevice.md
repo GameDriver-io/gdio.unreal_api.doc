@@ -1,16 +1,16 @@
 # ApiClient.CreateInputDevice method
 
-Use this function to create a VR device (OculusHMD, etc).
+Use this function to create a virtual input device (OculusHMD, etc). To be used with VRInput(), FloatInput(), Vector2Input() and other similar calls.
 
 ```csharp
-public string CreateInputDevice(string deviceType, string deviceName, string[] deviceTags = null, 
-    bool appendName = true, int timeout = 30)
+public string CreateInputDevice(string deviceType, string mappingContexts, 
+    string[] deviceTags = null, bool appendName = true, int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
 | deviceType | The category of device to be created. |
-| deviceName | An optional list of active context names, comma seperated to be loaded. |
+| mappingContexts | An optional list of active mapping context assets to be loaded if using Enhanced Input. Names must be comma separated if using multiple mapping contextx. |
 | deviceTags | Unused |
 | appendName | Unused |
 | timeout | The amount of time in seconds to wait for connectivity to establish with the game. |
@@ -18,8 +18,15 @@ public string CreateInputDevice(string deviceType, string deviceName, string[] d
 ## Examples
 
 ```csharp
-// Creates an Oculus headset device with several contexts.
-             api.CreateInputDevice("OculusTouch", "IMC_VRSpectator,IMC_Weapon_Left,IMC_Weapon_Right,IMC_Menu,IMC_Default,IMC_Hands");
+// Creates an input device with or without mapping contexts.
+             // VR Enhanced Input
+             api.CreateInputDevice("OculusTouch","IMC_Weapon_Left,IMC_Weapon_Right,IMC_Menu,IMC_Default,IMC_Hands");
+             // VR 
+             api.CreateInputDevice("OculusTouch","");
+             // Gamepad Enhanced Input
+             api.CreateInputDevice("GDIO", "IMC_Default");
+             // Gamepad
+             api.CreateInputDevice("GDIO", "");
 ```
 
 ## See Also

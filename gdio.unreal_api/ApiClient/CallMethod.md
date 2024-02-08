@@ -3,7 +3,7 @@
 Use this function to execute a Void method on an object.
 
 ```csharp
-public bool CallMethod(string hierarchyPath, string methodName, object[] arguments, 
+public bool CallMethod(string hierarchyPath, string methodName, object[] arguments = null, 
     int timeout = 60)
 ```
 
@@ -40,7 +40,7 @@ Returns a boolean based on the successful execution of the return type void, met
 Use this function to execute a method on an object.
 
 ```csharp
-public T CallMethod<T>(string hierarchyPath, string methodName, object[] arguments, 
+public T CallMethod<T>(string hierarchyPath, string methodName, object[] arguments = null, 
     int timeout = 60)
 ```
 

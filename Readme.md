@@ -16,3 +16,8 @@ If you find an issue with this documentation, please let us know in the Issues t
 
 Thank you for choosing GameDriver for your test automation needs!
 
+# Change log
+
+Added new convenience api calls
+Added documentation for the new blueprint/C++ Api calls available in V2.1 onwards.
+Removed the need to explicitly include UE4 or UE5 namespaces. Use the api that matches your unreal major engine version.
