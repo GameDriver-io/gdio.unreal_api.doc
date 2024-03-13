@@ -1,6 +1,6 @@
 # ApiClient.RemoveInputDevices method
 
-Use this function to remove all GameDriver virtual VR devices
+Use this function to remove all GameDriver virtual input devices
 
 ```csharp
 public void RemoveInputDevices(int timeout = 30)

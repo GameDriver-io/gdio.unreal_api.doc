@@ -7,10 +7,19 @@ public bool FloatInputEvent(string inputControlPath, float value, ulong numberOf
     int timeout = 30)
 ```
 
+| parameter | description |
+| --- | --- |
+| inputControlPath | The EKey name of the Input as string. |
+| value | Value of the float inpout event |
+| numberOfFrames |  |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
 ## Examples
 
 ```csharp
-api.FloatInputEvent("OculusTouch_Right_Thumbstick_Y", 0.75f);
+// Gamepad Left Thumbstick inputs
+api.FloatInputEvent("Gamepad_LeftX", -0.210938f); // 1143859
+api.FloatInputEvent("Gamepad_LeftY", -0.062988f); // 1143859
 ```
 
 ## See Also

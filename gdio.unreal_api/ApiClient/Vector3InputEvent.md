@@ -9,7 +9,7 @@ public bool Vector3InputEvent(string inputControlPath, Vector3 value, ulong numb
 
 | parameter | description |
 | --- | --- |
-| inputControlPath | The Input Control Path |
+| inputControlPath | The EKey name of the Input as string. |
 | value | Value of the Vector3 event |
 | numberOfFrames | The number of frames to press and hold the axis for. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |

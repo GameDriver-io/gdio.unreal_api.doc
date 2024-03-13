@@ -1,4 +1,36 @@
-# ApiClient.GetObjectFieldValue&lt;T&gt; method (1 of 2)
+# ApiClient.GetObjectFieldValue method (1 of 3)
+
+This method returns the field or property value of an object.
+
+```csharp
+public object GetObjectFieldValue(Type type, string hierarchyPath, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| type | The Type of the field or property to be inspected. |
+| hierarchyPath | The HierarchyPath of the object and field/property to be inspected. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+Returns an object for the value or throws an Exception on error.
+
+## Examples
+
+```csharp
+// Non generic call to easily test fields of multiple types.
+object result = api.GetObjectFieldValue(value.GetType(),$"{objectHPath}/@{fieldName}");
+```
+
+## See Also
+
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unreal_api](../../gdio.unreal_api.md)
+
+---
+
+# ApiClient.GetObjectFieldValue&lt;T&gt; method (2 of 3)
 
 This method returns the field or property value of an object.
 
@@ -32,7 +64,7 @@ Assert.IsTrue(invisCube == false, "The invisible cube isn't active"); //Passes i
 
 ---
 
-# ApiClient.GetObjectFieldValue&lt;T&gt; method (2 of 2)
+# ApiClient.GetObjectFieldValue&lt;T&gt; method (3 of 3)
 
 This method returns the field or property value of an object.
 

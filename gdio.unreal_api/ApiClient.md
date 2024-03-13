@@ -20,7 +20,7 @@ public class ApiClient
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
 | [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. |
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to an Unreal game with GameDriver Agent configured and active. This function can connect to the unreal editor or a Standalone deployment of a game. |
-| [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a VR device (OculusHMD, etc). |
+| [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a virtual input device (OculusHMD, etc). To be used with VRInput(), FloatInput(), Vector2Input() and other similar calls. |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Deprecated. Disable the use of object caching when doing HierarchyPath object resolution. |
 | [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
 | [DoubleClick](ApiClient/DoubleClick.md)(…) | Use this function to perform in-game mouse double-clicks. (2 methods) |
@@ -28,6 +28,7 @@ public class ApiClient
 | [DoubleClickObject](ApiClient/DoubleClickObject.md)(…) | Use this function to interact with an object in game using a mouse double-click. |
 | [DoubleClickObjectEx](ApiClient/DoubleClickObjectEx.md)(…) | Use this function to interact with an object in game using a mouse double-click, combinated with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames |
 | [EnableObjectCaching](ApiClient/EnableObjectCaching.md)(…) | this method is deprecated and will be removed in a future api version |
+| [FindLookAtRotation](ApiClient/FindLookAtRotation.md)(…) | Return a Rotator(Vector3) such that the new rotation points an object towards a target. |
 | [FloatInputEvent](ApiClient/FloatInputEvent.md)(…) | Use this function to send arbitrary Float Input Event states to the game. |
 | [FlushObjectLookupCache](ApiClient/FlushObjectLookupCache.md)(…) | Deprecated. If object caching is enabled, this method will request that the agent flush the cache being held for all object lookups. |
 | [GetConnectedGameDetails](ApiClient/GetConnectedGameDetails.md)() | This method returns the details of the game that the API client is connected to. |
@@ -35,11 +36,14 @@ public class ApiClient
 | [GetLastFPS](ApiClient/GetLastFPS.md)() | This method returns the last frames per second that the API client has recieved from the GameDriver agent. |
 | [GetMethodList](ApiClient/GetMethodList.md)(…) | This method returns all the (reflected) Methods available for the passed in object. |
 | [GetObjectDistance](ApiClient/GetObjectDistance.md)(…) | This method returns the distance of two objects using vector subtraction. |
+| [GetObjectFieldValue](ApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. |
 | [GetObjectFieldValue&lt;T&gt;](ApiClient/GetObjectFieldValue.md)(…) | This method returns the field or property value of an object. (2 methods) |
 | [GetObjectList](ApiClient/GetObjectList.md)(…) | This method returns of a list of all Unreal UObject Objects in the World. (2 methods) |
-| [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object. |
+| [GetObjectPosition](ApiClient/GetObjectPosition.md)(…) | Return the position of a specific object.The position returned is in worldspace coordinates for an actor or a component and screenspace coordinates for widgets. |
+| [GetObjectRotation](ApiClient/GetObjectRotation.md)(…) | EGet the rotation of an in Game AActor or a USceneComponent as a Vector. |
 | [GetPropertyList](ApiClient/GetPropertyList.md)(…) | This method returns a list of Properties for the passed in object. |
 | [GetSceneName](ApiClient/GetSceneName.md)(…) | Return the name of the current active scene. |
+| [GetWidgetRotation](ApiClient/GetWidgetRotation.md)(…) | Get the rotation of a UWidget as returned by GetRenderTransformAngle as a float value. |
 | [KeyPress](ApiClient/KeyPress.md)(…) | Use this function to send arbitrary button states to the game. Defaults to LEFT ALT/CTRL/SHIFT/WINDOWS(COMMAND) (2 methods) |
 | [LoadLevel](ApiClient/LoadLevel.md)(…) | This method loads the scene, defined by the scene name passed as an argument. |
 | [MouseDrag](ApiClient/MouseDrag.md)(…) | Perform a mouse drag operation. |
@@ -51,12 +55,15 @@ public class ApiClient
 | [Raycast](ApiClient/Raycast.md)(…) | Perform a Raycast to a point to find out what is in that position. |
 | [ReConnect](ApiClient/ReConnect.md)(…) | Use this function to disconnect and reconnect the API client to the Game. Useful after loading a new Scene when the agent is reloaded and requires reconnection. |
 | [RegisterCollisionMonitor](ApiClient/RegisterCollisionMonitor.md)(…) | Register a collision monitor to recieve collision events on an object. |
-| [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Use this function to remove all GameDriver virtual VR devices |
+| [RemoveInputDevices](ApiClient/RemoveInputDevices.md)(…) | Use this function to remove all GameDriver virtual input devices |
 | [RotateObject](ApiClient/RotateObject.md)(…) | Rotate an object defined by the HierarchyPath and rotated by a Quaternion. [https://scriptinghelpers.org/blog/how-to-think-about-quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions) for more information. (4 methods) |
 | [Scroll](ApiClient/Scroll.md)(…) | Use this function to simulate mouse wheel scrolling. |
 | [SetInputFieldText](ApiClient/SetInputFieldText.md)(…) | Set the text of a TextBox or EditableText |
 | [SetObjectFieldValue](ApiClient/SetObjectFieldValue.md)(…) | Set the field or property of an object. |
+| [SetObjectPosition](ApiClient/SetObjectPosition.md)(…) | Easily set the position of an AActor or USceneComponent in world coordinates. |
+| [SetObjectRotation](ApiClient/SetObjectRotation.md)(…) | Easily rotate an AActor or a USceneComponent in world coordinates. |
 | [SetTimescale](ApiClient/SetTimescale.md)(…) | Use this function to set the play speed of the game. Can be used to speed up or slow down the game in order to improve test execution time. (see https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/Kismet/UGameplayStatics/SetGlobalTimeDilation/) |
+| [SetWidgetRotation](ApiClient/SetWidgetRotation.md)(…) | Easily rotate a UWidget by passing in the angle. |
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |

@@ -9,7 +9,7 @@ public bool QuaternionInputEvent(string inputControlPath, Quaternion value, ulon
 
 | parameter | description |
 | --- | --- |
-| inputControlPath | The Input Control Path for the New Input System |
+| inputControlPath | The EKey name of the Input as string. |
 | value | Value of the Quaternion event |
 | numberOfFrames | The number of frames to press and hold the axis for. |
 | timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |

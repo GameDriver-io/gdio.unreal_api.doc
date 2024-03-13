@@ -21,8 +21,8 @@ TRUE if the GameDriver agent was able to successfully set the TextBox or Editabl
 ## Examples
 
 ```csharp
-//Sets the TextBox component attached to the "TextMeshPro InputField" object with the tag "FilterInputTxt" to the value of "America"
-            api.SetInputFieldText("//FilterInputTxt[@name='TextMeshPro InputField']", "America");
+//Sets the Editable Text Box value to "America".
+            api.SetInputFieldText("/SimpleWidget_C_0/editText", "America");
 ```
 
 ## See Also
