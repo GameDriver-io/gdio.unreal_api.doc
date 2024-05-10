@@ -12,6 +12,7 @@ public class ApiClient
 | --- | --- |
 | [ApiClient](ApiClient/ApiClient.md)() | The default constructor. |
 | event [LoggedMessage](ApiClient/LoggedMessage.md) |  |
+| event [ScriptSignal](ApiClient/ScriptSignal.md) |  |
 | [CallMethod](ApiClient/CallMethod.md)(…) | Use this function to execute a Void method on an object. |
 | [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](ApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
@@ -68,6 +69,7 @@ public class ApiClient
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](ApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
+| [UseWebSockets](ApiClient/UseWebSockets.md)(…) | Configure a WebSocket server for a client (GDIOAgent) to connect to. |
 | [Vector2InputEvent](ApiClient/Vector2InputEvent.md)(…) | Use this function to send arbitrary Vector2 Event states to the game. |
 | [Vector3InputEvent](ApiClient/Vector3InputEvent.md)(…) | Use this function to send arbitrary Vector3 Event states to the game. |
 | [VRInput](ApiClient/VRInput.md)(…) | Convenience function to send arbitrary Vector3 with Quaternion Event states to the game for the HUD or controllers |
