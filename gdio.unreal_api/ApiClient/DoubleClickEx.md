@@ -13,10 +13,7 @@ public bool DoubleClickEx(MouseButtons buttonId, Vector2 position, ulong clickFr
 | position | The Vector2 position of where to double click in Screen space. |
 | clickFrameCount | The number of frames to click the specific position. |
 | keys | An array of [`KeyCode`](../KeyCode.md) keys to press during the click operation. |
-| keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | An array of [`KeyCode`](../KeyCode.md) modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
 | timeout | The number of seconds to wait for a response that the ClickEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ## Return Value
@@ -57,10 +54,7 @@ public bool DoubleClickEx(MouseButtons buttonId, float x, float y, ulong clickFr
 | y | The Y coordinate of the game to double click in Screen space. |
 | clickFrameCount | The number of frames to click the specific position. |
 | keys | An array of [`KeyCode`](../KeyCode.md) keys to press during the click operation. |
-| keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| modifiers | An array of [`KeyCode`](../KeyCode.md) modifier keys to press during the click operation. |
-| modifiersNumberOfFrames | The number of frames to press the modifier keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. |
-| delayAfterModifiersMsec | Total time in milliseconds to wait after pressing modifier keys, before clicking the object. This is needed when a delay is required to register the modifier keys have been pressed in the game. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
+| keysNumberOfFrames | The number of frames to press the keys parameter down. This parameter is not additive to the total count and is automatically accumulated by the function call. If this delay is longer than the frame count for all the key presses and click operation that the behavior of the result may not be what the user intends. |
 | timeout | The number of seconds to wait for a response that the ClickEx request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
 
 ## Return Value
