@@ -4,8 +4,7 @@ Use this function to perform in-game mouse-clicks combined with key press operat
 
 ```csharp
 public bool ClickEx(MouseButtons buttonId, Vector2 position, ulong clickFrameCount, 
-    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, KeyCode[] modifiers = null, 
-    ulong modifiersNumberOfFrames = 3, int delayAfterModifiersMsec = 250, int timeout = 30)
+    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, int timeout = 30)
 ```
 
 | parameter | description |
@@ -41,8 +40,7 @@ Use this function to perform in game mouse-clicks combined with key press operat
 
 ```csharp
 public bool ClickEx(MouseButtons buttonId, float x, float y, ulong clickFrameCount, 
-    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, KeyCode[] modifiers = null, 
-    ulong modifiersNumberOfFrames = 3, int delayAfterModifiersMsec = 500, int timeout = 30)
+    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, int timeout = 30)
 ```
 
 | parameter | description |
