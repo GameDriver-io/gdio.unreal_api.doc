@@ -17,17 +17,18 @@ public class ApiClient
 | [CallMethod&lt;T&gt;](ApiClient/CallMethod.md)(…) | Use this function to execute a method on an object. |
 | [CaptureScreenshot](ApiClient/CaptureScreenshot.md)(…) | Use this function to capture a screenshot of the Game under test. |
 | [Click](ApiClient/Click.md)(…) | Use this function to perform in-game mouse-clicks. (3 methods) |
-| [ClickEx](ApiClient/ClickEx.md)(…) | Use this function to perform in-game mouse-clicks combined with key press operations. The total frame count of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames (2 methods) |
+| [ClickEx](ApiClient/ClickEx.md)(…) |  (2 methods) |
 | [ClickObject](ApiClient/ClickObject.md)(…) | Use this function to interact with an in-game object using mouse-clicks. |
-| [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) | Use this function to interact with an in-game object using mouse-clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames. |
+| [ClickObjectEx](ApiClient/ClickObjectEx.md)(…) |  |
 | [Connect](ApiClient/Connect.md)(…) | Use this function to connect to an Unreal game with GameDriver Agent configured and active. This function can connect to the unreal editor or a Standalone deployment of a game. |
+| [ConsoleCommand](ApiClient/ConsoleCommand.md)(…) | Pass a command to the Unreal Console. |
 | [CreateInputDevice](ApiClient/CreateInputDevice.md)(…) | Use this function to create a virtual input device (OculusHMD, etc). To be used with VRInput(), FloatInput(), Vector2Input() and other similar calls. |
 | [DisableObjectCaching](ApiClient/DisableObjectCaching.md)(…) | Deprecated. Disable the use of object caching when doing HierarchyPath object resolution. |
 | [Disconnect](ApiClient/Disconnect.md)() | Use this function to disconnect the API client from the Game. |
 | [DoubleClick](ApiClient/DoubleClick.md)(…) | Use this function to perform in-game mouse double-clicks. (2 methods) |
-| [DoubleClickEx](ApiClient/DoubleClickEx.md)(…) | Use this function to perform in game mouse double clicks combined with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames (2 methods) |
+| [DoubleClickEx](ApiClient/DoubleClickEx.md)(…) |  (2 methods) |
 | [DoubleClickObject](ApiClient/DoubleClickObject.md)(…) | Use this function to interact with an object in game using a mouse double-click. |
-| [DoubleClickObjectEx](ApiClient/DoubleClickObjectEx.md)(…) | Use this function to interact with an object in game using a mouse double-click, combinated with key press operations. The total frame count execution of this operation is clickFrameCount + keysNumberOfFrames + modifiersNumberOfFrames |
+| [DoubleClickObjectEx](ApiClient/DoubleClickObjectEx.md)(…) |  |
 | [EnableObjectCaching](ApiClient/EnableObjectCaching.md)(…) | this method is deprecated and will be removed in a future api version |
 | [FindLookAtRotation](ApiClient/FindLookAtRotation.md)(…) | Return a Rotator(Vector3) such that the new rotation points an object towards a target. |
 | [FloatInputEvent](ApiClient/FloatInputEvent.md)(…) | Use this function to send arbitrary Float Input Event states to the game. |
@@ -65,8 +66,12 @@ public class ApiClient
 | [SetObjectRotation](ApiClient/SetObjectRotation.md)(…) | Easily rotate an AActor or a USceneComponent in world coordinates. |
 | [SetTimescale](ApiClient/SetTimescale.md)(…) | Use this function to set the play speed of the game. Can be used to speed up or slow down the game in order to improve test execution time. (see https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/Kismet/UGameplayStatics/SetGlobalTimeDilation/) |
 | [SetWidgetRotation](ApiClient/SetWidgetRotation.md)(…) | Easily rotate a UWidget by passing in the angle. |
+| [StartEditorPlay](ApiClient/StartEditorPlay.md)(…) |  |
+| [StopEditorPlay](ApiClient/StopEditorPlay.md)(…) | Stop a game from playing in the Editor, if it is currently in Play mode. |
 | [Tap](ApiClient/Tap.md)(…) | Tap the handheld device at the defined position. (2 methods) |
 | [TapObject](ApiClient/TapObject.md)(…) | Tap an object. |
+| [ToggleEditorPause](ApiClient/ToggleEditorPause.md)(…) |  |
+| [ToggleEditorPlay](ApiClient/ToggleEditorPlay.md)(…) |  |
 | [TouchInput](ApiClient/TouchInput.md)(…) | Send a raw TouchInput event to the game. (2 methods) |
 | [UnregisterCollisionMonitor](ApiClient/UnregisterCollisionMonitor.md)(…) | Unregister the monitoring of collision events on a GameObject that has been previously registered for monitoring. |
 | [UseWebSockets](ApiClient/UseWebSockets.md)(…) | Configure a WebSocket server for a client (GDIOAgent) to connect to. |

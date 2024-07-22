@@ -4,8 +4,7 @@ Use this function to interact with an object in game using a mouse double-click,
 
 ```csharp
 public bool DoubleClickObjectEx(MouseButtons buttonId, string hierarchyPath, ulong clickFrameCount, 
-    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, KeyCode[] modifiers = null, 
-    ulong modifiersNumberOfFrames = 3, int delayAfterModifiersMsec = 500, int timeout = 30)
+    KeyCode[] keys = null, ulong keysNumberOfFrames = 5, int timeout = 30)
 ```
 
 | parameter | description |

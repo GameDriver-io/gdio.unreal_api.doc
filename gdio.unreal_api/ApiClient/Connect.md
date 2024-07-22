@@ -11,6 +11,7 @@ public void Connect(string hostname, int port = 15505, bool autoplay = false, in
 | --- | --- |
 | hostname | The hostname of the machine running the game. |
 | port | The configured port that the GameDriver agent is configured to use. |
+| autoplay | Whether to auto-launch the game. (Only applies when running the agent in the Editor) |
 | timeout | The amount of time in seconds to wait for connectivity to establish with the game. |
 
 ## Examples
