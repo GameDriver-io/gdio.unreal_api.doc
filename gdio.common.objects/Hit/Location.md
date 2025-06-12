@@ -1,5 +1,7 @@
 # Hit.Location field
 
+The location in world space where the moving shape would end up against the impacted object, if there is a hit.
+
 ```csharp
 public Vector3 Location;
 ```

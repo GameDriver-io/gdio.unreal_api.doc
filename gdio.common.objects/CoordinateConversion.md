@@ -1,5 +1,7 @@
 # CoordinateConversion enumeration
 
+Enumeration for the type of coordinate conversion.
+
 ```csharp
 public enum CoordinateConversion
 ```
@@ -8,14 +10,14 @@ public enum CoordinateConversion
 
 | name | value | description |
 | --- | --- | --- |
-| None | `0` |  |
-| Local | `1` |  |
-| WorldToScreenPoint | `2` |  |
-| WorldToViewportPoint | `3` |  |
-| ScreenToWorldPoint | `4` |  |
-| ScreenToViewportPoint | `5` |  |
-| ViewportToWorldPoint | `6` |  |
-| ViewportToScreenPoint | `7` |  |
+| None | `0` | None returns the gameObject.transform.position without any conversion |
+| Local | `1` | Local returns the gameObject.transform.localposition without any conversion |
+| WorldToScreenPoint | `2` | WorldToScreenPoint returns the coordinates of the object transformed from World-To-Screen by the specified Camera. The default is Camera.main. |
+| WorldToViewportPoint | `3` | WorldToViewPortPoint returns the coordinates of the object in the screen space of the specified Camera. The default is Camera.main. |
+| ScreenToWorldPoint | `4` | ScreenToWorldPoint returns the coordinates of the object in the world space of the specified Camera. The default is Camera.main. |
+| ScreenToViewportPoint | `5` | ScreenToViewPortPoint returns the coordinates of the object in the viewport space of the specified Camera. The default is Camera.main. |
+| ViewportToWorldPoint | `6` | ScreenToWorldPoint returns the coordinates of the object in the world space of the specified Camera. The default is Camera.main. |
+| ViewportToScreenPoint | `7` | ScreenToViewPortPoint returns the coordinates of the object in the viewport space of the specified Camera. The default is Camera.main. |
 
 ## See Also
 

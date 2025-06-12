@@ -1,5 +1,7 @@
 # RaycastResult.type property
 
+The Type of object hit by the raycase (e.g. Physics).
+
 ```csharp
 public string type { get; set; }
 ```

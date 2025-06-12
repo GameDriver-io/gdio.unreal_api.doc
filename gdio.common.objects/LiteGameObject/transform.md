@@ -1,7 +1,9 @@
-# LiteGameObject.transform field
+# LiteGameObject.Transform property
+
+Position, rotation, and scale of the object.
 
 ```csharp
-public Transform transform;
+public Transform Transform { get; set; }
 ```
 
 ## See Also

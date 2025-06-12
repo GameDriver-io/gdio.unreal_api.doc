@@ -1,5 +1,7 @@
 # Quaternion.z field
 
+THe x component.
+
 ```csharp
 public float z;
 ```

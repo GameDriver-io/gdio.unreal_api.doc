@@ -1,5 +1,7 @@
 # LiteComponent.transform field
 
+The transform attached to the gameObject.
+
 ```csharp
 public Transform transform;
 ```

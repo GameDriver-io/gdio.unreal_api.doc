@@ -1,6 +1,6 @@
 # ApiClient constructor
 
-The default constructor.
+Constructor for the ApiClient.
 
 ```csharp
 public ApiClient()

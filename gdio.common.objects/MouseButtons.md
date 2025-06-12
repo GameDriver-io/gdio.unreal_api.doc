@@ -1,5 +1,7 @@
 # MouseButtons enumeration
 
+Mouse button enumerations to use for input.
+
 ```csharp
 public enum MouseButtons
 ```
@@ -8,9 +10,9 @@ public enum MouseButtons
 
 | name | value | description |
 | --- | --- | --- |
-| LEFT | `0` |  |
-| RIGHT | `1` |  |
-| MIDDLE | `2` |  |
+| LEFT | `0` | Left Mouse Button |
+| RIGHT | `1` | Right Mouse Button |
+| MIDDLE | `2` | Middle Mouse Button |
 
 ## See Also
 

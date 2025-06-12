@@ -1,5 +1,7 @@
 # Vector4 class
 
+A representation of 3D vectors and points.
+
 ```csharp
 public class Vector4 : IEquatable<Vector4>
 ```
@@ -10,10 +12,10 @@ public class Vector4 : IEquatable<Vector4>
 | --- | --- |
 | [Vector4](Vector4/Vector4.md)() | The default constructor. |
 | [Vector4](Vector4/Vector4.md)(…) |  (2 constructors) |
-| [w](Vector4/w.md) |  |
-| [x](Vector4/x.md) |  |
-| [y](Vector4/y.md) |  |
-| [z](Vector4/z.md) |  |
+| [w](Vector4/w.md) | The w component. |
+| [x](Vector4/x.md) | The x component. |
+| [y](Vector4/y.md) | The y component. |
+| [z](Vector4/z.md) | The z component. |
 | [Equals](Vector4/Equals.md)(…) |  (2 methods) |
 | override [ToString](Vector4/ToString.md)() |  |
 

@@ -1,5 +1,7 @@
 # PhysicMaterial.bounceCombine field
 
+Determines how the bounceiness is combined. Unity 2018
+
 ```csharp
 public PhysicMaterialCombine bounceCombine;
 ```

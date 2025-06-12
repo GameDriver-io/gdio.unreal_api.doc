@@ -26,6 +26,7 @@ public class Transform
 | [right](Transform/right.md) |  |
 | [root](Transform/root.md) |  |
 | [rotation](Transform/rotation.md) |  |
+| [siblingIndex](Transform/siblingIndex.md) |  |
 | [up](Transform/up.md) |  |
 | [worldToLocalMatrix](Transform/worldToLocalMatrix.md) |  |
 

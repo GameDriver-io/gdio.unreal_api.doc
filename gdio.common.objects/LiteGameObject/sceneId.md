@@ -1,7 +1,9 @@
-# LiteGameObject.sceneId field
+# LiteGameObject.SceneId property
+
+The Scene ID.
 
 ```csharp
-public int sceneId;
+public int SceneId { get; set; }
 ```
 
 ## See Also

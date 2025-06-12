@@ -3,12 +3,13 @@
 Use this function to disconnect and reconnect the API client to the Game. Useful after loading a new Scene when the agent is reloaded and requires reconnection.
 
 ```csharp
-public void ReConnect(string hostname, int delay, int port = 15505, int timeout = 60)
+public void ReConnect(int millisecondDelay, string hostname = "", int port = 15505, 
+    int timeout = 60)
 ```
 
 | parameter | description |
 | --- | --- |
-| hostname | The hostname of the machine running the game. |
+| hostname | The hostname of the machine running the game. Empty to use last port and hostname |
 | delay | How long to wait (milliseconds) before attempting to reconnect., |
 | port | The configured port that the GameDriver agent is configured to use. |
 | timeout | The amount of time in seconds to wait for connectivity to establish with the game. |

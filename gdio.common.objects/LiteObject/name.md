@@ -1,7 +1,9 @@
-# LiteObject.name field
+# LiteObject.Name property
+
+The name of the object.
 
 ```csharp
-public string name;
+public string Name { get; set; }
 ```
 
 ## See Also

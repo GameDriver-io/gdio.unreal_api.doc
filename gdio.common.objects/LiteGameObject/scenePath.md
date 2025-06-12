@@ -1,7 +1,9 @@
-# LiteGameObject.scenePath field
+# LiteGameObject.ScenePath property
+
+The Path of the Scene.
 
 ```csharp
-public string scenePath;
+public string ScenePath { get; set; }
 ```
 
 ## See Also

@@ -1,5 +1,7 @@
 # Collision.impulse field
 
+A [`Vector3`](../Vector3.md) describing the impulse value.
+
 ```csharp
 public Vector3 impulse;
 ```

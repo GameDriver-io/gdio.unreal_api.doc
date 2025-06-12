@@ -1,5 +1,7 @@
 # PhysicMaterial.staticFriction field
 
+The friction coefficient used when an object is lying on the surface.
+
 ```csharp
 public float staticFriction;
 ```

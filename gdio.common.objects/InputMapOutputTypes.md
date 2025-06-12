@@ -1,5 +1,7 @@
 # InputMapOutputTypes enumeration
 
+Enumeration of the InputSystem Map Output Type
+
 ```csharp
 public enum InputMapOutputTypes
 ```
@@ -8,9 +10,9 @@ public enum InputMapOutputTypes
 
 | name | value | description |
 | --- | --- | --- |
-| DEBUG | `0` |  |
-| JSON | `1` |  |
-| MULTI | `2` |  |
+| DEBUG | `0` | Outputs string to be used in Console or Debug |
+| JSON | `1` | Outputs JSON file and returns JSON string |
+| MULTI | `2` | Outputs JSON file and returns DEBUG string |
 
 ## See Also
 

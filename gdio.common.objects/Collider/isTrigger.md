@@ -1,5 +1,7 @@
 # Collider.isTrigger field
 
+Boolean if the collider is a trigger or not.
+
 ```csharp
 public bool isTrigger;
 ```

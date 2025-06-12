@@ -1,5 +1,7 @@
 # Collision.CollisionType field
 
+The enumeration value of the collision type [`COLLISION_EVENT`](../COLLISION_EVENT.md)
+
 ```csharp
 public COLLISION_EVENT CollisionType;
 ```

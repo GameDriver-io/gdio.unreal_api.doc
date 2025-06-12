@@ -1,5 +1,7 @@
 # Collider.material field
 
+The [`PhysicMaterial`](../PhysicMaterial.md) of the collider.
+
 ```csharp
 public PhysicMaterial material;
 ```

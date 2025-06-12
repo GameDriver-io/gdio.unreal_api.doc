@@ -1,5 +1,7 @@
 # GameConnectionDetails.IsEditor field
 
+Boolean value if the game is running in an Unity editor instance.
+
 ```csharp
 public bool IsEditor;
 ```

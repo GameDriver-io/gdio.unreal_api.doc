@@ -1,5 +1,7 @@
 # GameConnectionDetails.Platform field
 
+The Application.Platform of the connected game.
+
 ```csharp
 public string Platform;
 ```

@@ -1,5 +1,7 @@
 # RaycastResult.point property
 
+The impact point in world space where the ray hit the collider.
+
 ```csharp
 public Vector3 point { get; set; }
 ```

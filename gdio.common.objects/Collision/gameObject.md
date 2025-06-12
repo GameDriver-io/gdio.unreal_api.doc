@@ -1,5 +1,7 @@
 # Collision.gameObject field
 
+The LiteGameObject of the collision, [`LiteGameObject`](../LiteGameObject.md)
+
 ```csharp
 public LiteGameObject gameObject;
 ```

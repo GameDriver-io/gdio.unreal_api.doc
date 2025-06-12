@@ -1,14 +1,27 @@
 # ApiClient.GetMethodList method
 
-This method returns all the (reflected) Methods available for the passed in object.
+Returns a dictionary of the methods attached to the target object. The key of the dictionary is a string representing the method signature. The value of the dictionary is the hierarchy path of the object the method is attached to.
 
 ```csharp
-public Dictionary<string, string> GetMethodList(string hierarchyPath, int timeout = 30)
+public HashSet<MethodInfo> GetMethodList(string hierarchyPath, int timeout = 30)
 ```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The object to get the methods of |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
 
-A dictionary of all accessible methods
+A Dictionary [method signature, hierarchy path]
+
+## Examples
+
+```csharp
+Dictionary<string, string> methodList = api.GetMethodList();
+var methodSingatures = propList.Keys;
+var parentPaths = propList.Values;
+```
 
 ## See Also
 

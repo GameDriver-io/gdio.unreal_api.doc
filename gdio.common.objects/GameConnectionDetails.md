@@ -1,5 +1,7 @@
 # GameConnectionDetails class
 
+This class provides information about the currently connected game.
+
 ```csharp
 public class GameConnectionDetails
 ```
@@ -9,11 +11,12 @@ public class GameConnectionDetails
 | name | description |
 | --- | --- |
 | [GameConnectionDetails](GameConnectionDetails/GameConnectionDetails.md)() | The default constructor. |
-| [Addr](GameConnectionDetails/Addr.md) |  |
-| [GamePath](GameConnectionDetails/GamePath.md) |  |
-| [IsEditor](GameConnectionDetails/IsEditor.md) |  |
-| [Platform](GameConnectionDetails/Platform.md) |  |
-| [Port](GameConnectionDetails/Port.md) |  |
+| [Addr](GameConnectionDetails/Addr.md) | The IPAddress of the connected game./&gt; |
+| [GamePath](GameConnectionDetails/GamePath.md) | The Application.DataPath of the connected game. |
+| [IsEditor](GameConnectionDetails/IsEditor.md) | Boolean value if the game is running in an Unity editor instance. |
+| [Platform](GameConnectionDetails/Platform.md) | The Application.Platform of the connected game. |
+| [Port](GameConnectionDetails/Port.md) | The port number of the connected game. |
+| [UID](GameConnectionDetails/UID.md) | The UID for the AutoPlay Editor instance. |
 
 ## See Also
 

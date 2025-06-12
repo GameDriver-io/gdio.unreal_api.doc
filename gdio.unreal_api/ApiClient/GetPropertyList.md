@@ -1,14 +1,27 @@
 # ApiClient.GetPropertyList method
 
-This method returns a list of Properties for the passed in object.
+Returns a dictionary of the properties and fields attached to the target object. The key of the dictionary is the hierarchy path of the property. The value of the dictionary is the value of the property represented as a string.
 
 ```csharp
-public Dictionary<string, string> GetPropertyList(string hierarchyPath, int timeout = 30)
+public HashSet<PropertyInfo> GetPropertyList(string hierarchyPath, int timeout = 30)
 ```
+
+| parameter | description |
+| --- | --- |
+| hierarchyPath | The object to get the properties of |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
 
 ## Return Value
 
-A Dictionary with keys representing the field values, and values being a string
+A Dictionary [hierarchy path, property value]
+
+## Examples
+
+```csharp
+Dictionary<string, string> propList = api.GetPropertyList();
+var propertyPaths = propList.Keys;
+var stringValues = propList.Values;
+```
 
 ## See Also
 

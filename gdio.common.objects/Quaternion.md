@@ -1,8 +1,17 @@
 # Quaternion class
 
+A representation of 3D rotation. See !:https://scriptinghelpers.org/blog/how-to-think-about-quaternions for more information.
+
 ```csharp
 public class Quaternion : IEquatable<Quaternion>
 ```
+
+| parameter | description |
+| --- | --- |
+| x | The x vector of the rotation. |
+| y | The y vector of the rotation. |
+| z | The z vector of the rotation. |
+| w | A scalar that stores the rotation around the vector. |
 
 ## Public Members
 
@@ -10,12 +19,18 @@ public class Quaternion : IEquatable<Quaternion>
 | --- | --- |
 | [Quaternion](Quaternion/Quaternion.md)() | The default constructor. |
 | [Quaternion](Quaternion/Quaternion.md)(…) |  |
-| [w](Quaternion/w.md) |  |
-| [x](Quaternion/x.md) |  |
-| [y](Quaternion/y.md) |  |
-| [z](Quaternion/z.md) |  |
+| [w](Quaternion/w.md) | The w component. |
+| [x](Quaternion/x.md) | The x component. |
+| [y](Quaternion/y.md) | The y component. |
+| [z](Quaternion/z.md) | THe x component. |
 | [Equals](Quaternion/Equals.md)(…) |  (2 methods) |
 | [EqualsDot](Quaternion/EqualsDot.md)(…) |  |
+| override [ToString](Quaternion/ToString.md)() |  |
+| const [Deg2Rad](Quaternion/Deg2Rad.md) |  |
+| const [kEpsilon](Quaternion/kEpsilon.md) |  |
+| const [Rad2Deg](Quaternion/Rad2Deg.md) |  |
+| static [Angle](Quaternion/Angle.md)(…) |  |
+| static [Dot](Quaternion/Dot.md)(…) |  |
 
 ## See Also
 

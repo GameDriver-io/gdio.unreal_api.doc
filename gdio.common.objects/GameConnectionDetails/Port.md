@@ -1,5 +1,7 @@
 # GameConnectionDetails.Port field
 
+The port number of the connected game.
+
 ```csharp
 public int Port;
 ```

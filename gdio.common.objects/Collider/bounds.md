@@ -1,5 +1,7 @@
 # Collider.bounds field
 
+The [`Bounds`](../Bounds.md) of the collider.
+
 ```csharp
 public Bounds bounds;
 ```

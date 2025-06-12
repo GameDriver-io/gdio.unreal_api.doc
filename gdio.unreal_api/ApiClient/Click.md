@@ -1,4 +1,31 @@
-# ApiClient.Click method (1 of 3)
+# ApiClient.Click method (1 of 4)
+
+Use this function to perform in-game mouse-clicks at the current mouse position.
+
+```csharp
+public bool Click(MouseButtons buttonId, ulong clickFrameCount, int timeout = 30)
+```
+
+| parameter | description |
+| --- | --- |
+| buttonId | The mouse button to use for the click operation. See MouseButtons. |
+| clickFrameCount | The number of frames to click the specific position. |
+| timeout | The number of seconds to wait for a response that the Click request was processed. Input requests process asynchronously, so a response does NOT imply the input operation has completed. |
+
+## Examples
+
+```csharp
+api.Click(MouseButtons.LEFT, 30, 30); //Clicks the left mouse button at the current mouse position for 30 frames
+```
+
+## See Also
+
+* class [ApiClient](../ApiClient.md)
+* namespace [gdio.unreal_api](../../gdio.unreal_api.md)
+
+---
+
+# ApiClient.Click method (2 of 4)
 
 Use this function to perform in-game mouse-clicks.
 
@@ -26,7 +53,7 @@ api.Click(MouseButtons.LEFT, new Vector2 (0, 0), 30, 30); //Clicks the left mous
 
 ---
 
-# ApiClient.Click method (2 of 3)
+# ApiClient.Click method (3 of 4)
 
 Use this function to perform in-game mouse-clicks.
 
@@ -55,7 +82,7 @@ api.Click(MouseButtons.LEFT, 0, 0, 30, 30); //Clicks the left mouse button at 0,
 
 ---
 
-# ApiClient.Click method (3 of 3)
+# ApiClient.Click method (4 of 4)
 
 ```csharp
 public bool Click(MouseButtons buttonId, int x, int y, ulong clickFrameCount, int timeout = 60)

@@ -1,5 +1,7 @@
 # Vector3.x field
 
+The x coordinate of the position.
+
 ```csharp
 public float x;
 ```

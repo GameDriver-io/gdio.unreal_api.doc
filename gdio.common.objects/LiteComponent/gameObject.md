@@ -1,5 +1,7 @@
 # LiteComponent.gameObject field
 
+The lite version of the gameObject the component is attached to.
+
 ```csharp
 public LiteGameObject gameObject;
 ```

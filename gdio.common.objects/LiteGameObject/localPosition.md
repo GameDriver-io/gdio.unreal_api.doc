@@ -1,7 +1,9 @@
-# LiteGameObject.localPosition field
+# LiteGameObject.LocalPosition property
+
+The Local Position of the object.
 
 ```csharp
-public Vector3 localPosition;
+public Vector3 LocalPosition { get; set; }
 ```
 
 ## See Also

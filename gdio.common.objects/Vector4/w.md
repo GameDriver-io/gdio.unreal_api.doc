@@ -1,5 +1,7 @@
 # Vector4.w field
 
+The w component.
+
 ```csharp
 public float w;
 ```

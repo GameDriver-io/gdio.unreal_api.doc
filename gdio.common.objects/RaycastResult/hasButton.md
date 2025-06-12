@@ -1,5 +1,7 @@
 # RaycastResult.hasButton property
 
+Boolean of whether the object hit by the raycast has a Button component.
+
 ```csharp
 public bool hasButton { get; set; }
 ```

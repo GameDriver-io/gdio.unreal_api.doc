@@ -1,5 +1,7 @@
 # PhysicMaterial.dynamicFriction field
 
+The friction used when already moving.
+
 ```csharp
 public float dynamicFriction;
 ```

@@ -1,14 +1,19 @@
 # ApiClient.ConsoleCommand method
 
-Pass a command to the Unreal Console.
+Pass an unreal command to the Unreal Console. https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-console-commands-reference
 
 ```csharp
-public bool ConsoleCommand(string command, int timeout = 30)
+public string ConsoleCommand(string command, int timeout = 30)
 ```
 
 | parameter | description |
 | --- | --- |
 | command | A string holding the command, parameters included, that you want entered and executed in the console. |
+| timeout | The timeout in seconds to wait for a response that the request was processed by the GameDriver agent. |
+
+## Return Value
+
+Output (if any) from running the console command
 
 ## See Also
 

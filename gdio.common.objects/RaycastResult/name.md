@@ -1,5 +1,7 @@
 # RaycastResult.name property
 
+The Name of the object hit by the raycast.
+
 ```csharp
 public string name { get; set; }
 ```

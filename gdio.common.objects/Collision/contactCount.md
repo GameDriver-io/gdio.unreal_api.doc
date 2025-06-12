@@ -1,5 +1,7 @@
 # Collision.contactCount field
 
+The number of contacts in the collision
+
 ```csharp
 public int contactCount;
 ```

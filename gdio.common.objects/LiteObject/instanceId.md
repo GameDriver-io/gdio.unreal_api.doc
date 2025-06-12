@@ -1,7 +1,9 @@
-# LiteObject.instanceId field
+# LiteObject.InstanceId property
+
+The name of the object.
 
 ```csharp
-public int instanceId;
+public int InstanceId { get; set; }
 ```
 
 ## See Also

@@ -1,5 +1,7 @@
 # COLLISION_EVENT enumeration
 
+The type of collision event recieved.
+
 ```csharp
 public enum COLLISION_EVENT
 ```
@@ -8,9 +10,9 @@ public enum COLLISION_EVENT
 
 | name | value | description |
 | --- | --- | --- |
-| COLLISION_ENTER | `0` |  |
-| COLLISION_STAY | `1` |  |
-| COLLISION_EXIT | `2` |  |
+| COLLISION_ENTER | `0` | Colloding object has entered the collision bounds |
+| COLLISION_STAY | `1` | Colliding object still loated in the collision bounds |
+| COLLISION_EXIT | `2` | Colliding object exited collision bounds |
 
 ## See Also
 

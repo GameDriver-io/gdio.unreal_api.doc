@@ -1,5 +1,7 @@
 # Hit.BlockingHit field
 
+PrimitiveComponent hit by the trace.
+
 ```csharp
 public bool BlockingHit;
 ```

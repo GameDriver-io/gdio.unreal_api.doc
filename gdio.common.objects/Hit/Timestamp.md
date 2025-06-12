@@ -1,5 +1,7 @@
 # Hit.Timestamp field
 
+The timestamp of when the collision occured
+
 ```csharp
 public DateTime Timestamp;
 ```

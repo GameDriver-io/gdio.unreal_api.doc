@@ -1,7 +1,9 @@
-# LiteGameObject.activeSelf field
+# LiteGameObject.ActiveSelf property
+
+A boolean indicating whether the object is active in the scene.
 
 ```csharp
-public bool activeSelf;
+public bool ActiveSelf { get; set; }
 ```
 
 ## See Also

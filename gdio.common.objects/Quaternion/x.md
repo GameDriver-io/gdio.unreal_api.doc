@@ -1,5 +1,7 @@
 # Quaternion.x field
 
+The x component.
+
 ```csharp
 public float x;
 ```

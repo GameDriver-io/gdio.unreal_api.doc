@@ -1,5 +1,7 @@
 # Color.a field
 
+The alpha (transparency) value.
+
 ```csharp
 public float a;
 ```
