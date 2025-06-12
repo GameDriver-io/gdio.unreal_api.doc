@@ -1,7 +1,9 @@
-# LiteGameObject.parentHashCode field
+# LiteGameObject.ParentHashCode property
+
+The Hash Code of the Parent object.
 
 ```csharp
-public int parentHashCode;
+public int ParentHashCode { get; set; }
 ```
 
 ## See Also

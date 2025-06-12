@@ -1,5 +1,7 @@
 # Vector3 class
 
+A representation of 3D vectors and points.
+
 ```csharp
 public class Vector3 : IEquatable<Vector3>
 ```
@@ -10,11 +12,13 @@ public class Vector3 : IEquatable<Vector3>
 | --- | --- |
 | [Vector3](Vector3/Vector3.md)() | The default constructor. |
 | [Vector3](Vector3/Vector3.md)(…) |  (2 constructors) |
-| [x](Vector3/x.md) |  |
-| [y](Vector3/y.md) |  |
-| [z](Vector3/z.md) |  |
+| [x](Vector3/x.md) | The x coordinate of the position. |
+| [y](Vector3/y.md) | The y coordinate of the position. |
+| [z](Vector3/z.md) | The z coordinate of the position. |
 | [Equals](Vector3/Equals.md)(…) |  (2 methods) |
 | override [ToString](Vector3/ToString.md)() |  |
+| static [SqrMagnitude](Vector3/SqrMagnitude.md)(…) | Magnitude squared of the vector. |
+| [operator -](Vector3/op_Subtraction.md) |  |
 
 ## See Also
 

@@ -1,7 +1,9 @@
-# LiteGameObject.tag field
+# LiteGameObject.Tag property
+
+The Tag of the object.
 
 ```csharp
-public string tag;
+public string Tag { get; set; }
 ```
 
 ## See Also

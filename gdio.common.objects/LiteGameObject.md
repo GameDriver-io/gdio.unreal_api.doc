@@ -1,5 +1,7 @@
 # LiteGameObject class
 
+This is a lite version of the GameObject.
+
 ```csharp
 public class LiteGameObject : LiteObject
 ```
@@ -9,20 +11,22 @@ public class LiteGameObject : LiteObject
 | name | description |
 | --- | --- |
 | [LiteGameObject](LiteGameObject/LiteGameObject.md)() | The default constructor. |
-| [activeSelf](LiteGameObject/activeSelf.md) |  |
-| [Components](LiteGameObject/Components.md) |  |
-| [hashCode](LiteGameObject/hashCode.md) |  |
-| [hierarchyPath](LiteGameObject/hierarchyPath.md) |  |
-| [localPosition](LiteGameObject/localPosition.md) |  |
-| [parentHashCode](LiteGameObject/parentHashCode.md) |  |
-| [position](LiteGameObject/position.md) |  |
-| [rotation](LiteGameObject/rotation.md) |  |
-| [sceneId](LiteGameObject/sceneId.md) |  |
-| [sceneName](LiteGameObject/sceneName.md) |  |
-| [scenePath](LiteGameObject/scenePath.md) |  |
-| [tag](LiteGameObject/tag.md) |  |
-| [transform](LiteGameObject/transform.md) |  |
-| [typeFullName](LiteGameObject/typeFullName.md) |  |
+| [ActiveSelf](LiteGameObject/ActiveSelf.md) { get; set; } | A boolean indicating whether the object is active in the scene. |
+| [HashCode](LiteGameObject/HashCode.md) { get; set; } | The Hash Code of the object. |
+| [HierarchyPath](LiteGameObject/HierarchyPath.md) { get; set; } | The HierarchyPath to the GameObject. |
+| [LocalPosition](LiteGameObject/LocalPosition.md) { get; set; } | The Local Position of the object. |
+| [ParentHashCode](LiteGameObject/ParentHashCode.md) { get; set; } | The Hash Code of the Parent object. |
+| [ParentInstanceId](LiteGameObject/ParentInstanceId.md) { get; set; } | The InstanceId of the parent. InstanceId can be +/- but not zero. So we will set it to zero for root objects that do not have a parent. |
+| [Position](LiteGameObject/Position.md) { get; set; } | The Absolute Position of the object. |
+| [Rotation](LiteGameObject/Rotation.md) { get; set; } | The Rotation of the object. |
+| [SceneId](LiteGameObject/SceneId.md) { get; set; } | The Scene ID. |
+| [SceneName](LiteGameObject/SceneName.md) { get; set; } | The Name of the Scene. |
+| [ScenePath](LiteGameObject/ScenePath.md) { get; set; } | The Path of the Scene. |
+| [Tag](LiteGameObject/Tag.md) { get; set; } | The Tag of the object. |
+| [Transform](LiteGameObject/Transform.md) { get; set; } | Position, rotation, and scale of the object. |
+| [TypeFullName](LiteGameObject/TypeFullName.md) { get; set; } | The Full Type the object. |
+| [Components](LiteGameObject/Components.md) | A list of the Component Types associated with the object. |
+| [hierarchyPath2](LiteGameObject/hierarchyPath2.md) | A second HierarchyPath to the GameObject sometimes used. |
 
 ## See Also
 

@@ -1,5 +1,7 @@
 # GameConnectionDetails.GamePath field
 
+The Application.DataPath of the connected game.
+
 ```csharp
 public string GamePath;
 ```

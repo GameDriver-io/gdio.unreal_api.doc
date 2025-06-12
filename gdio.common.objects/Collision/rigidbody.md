@@ -1,5 +1,7 @@
 # Collision.rigidbody field
 
+The [`Rigidbody`](../Rigidbody.md) of the collision.
+
 ```csharp
 public Rigidbody rigidbody;
 ```

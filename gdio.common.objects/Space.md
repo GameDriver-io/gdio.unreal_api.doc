@@ -1,5 +1,7 @@
 # Space enumeration
 
+Enumeration of the Space type
+
 ```csharp
 public enum Space
 ```
@@ -8,8 +10,8 @@ public enum Space
 
 | name | value | description |
 | --- | --- | --- |
-| World | `0` |  |
-| Self | `1` |  |
+| World | `0` | The World Space enumeration |
+| Self | `1` | The Self Space enumeration |
 
 ## See Also
 

@@ -1,5 +1,7 @@
 # LiteComponent.hierarchyPath field
 
+The HierarchyPath of the component.
+
 ```csharp
 public string hierarchyPath;
 ```

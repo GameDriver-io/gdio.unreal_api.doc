@@ -1,5 +1,7 @@
 # LiteComponent.tag field
 
+The tag of the gameObject
+
 ```csharp
 public string tag;
 ```

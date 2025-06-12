@@ -1,5 +1,7 @@
 # ScriptExecutionMode enumeration
 
+Lua script execution modes.
+
 ```csharp
 public enum ScriptExecutionMode
 ```
@@ -8,9 +10,9 @@ public enum ScriptExecutionMode
 
 | name | value | description |
 | --- | --- | --- |
-| Once | `0` |  |
-| EveryFrame | `1` |  |
-| EveryNthFrames | `2` |  |
+| Once | `0` | Execute once |
+| EveryFrame | `1` | Execute every frame |
+| EveryNthFrames | `2` | Execute every Nth frame |
 
 ## See Also
 

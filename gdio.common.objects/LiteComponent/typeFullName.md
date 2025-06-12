@@ -1,5 +1,7 @@
 # LiteComponent.typeFullName field
 
+The Type fullname of the class.
+
 ```csharp
 public string typeFullName;
 ```

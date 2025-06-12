@@ -4,7 +4,7 @@ Set the field or property of an object.
 
 ```csharp
 public bool SetObjectFieldValue(string hierarchyPath, string fieldOrPropertyName, object value, 
-    bool waitForObject = true, int timeout = 60)
+    bool waitForObject = false, int timeout = 60)
 ```
 
 | parameter | description |

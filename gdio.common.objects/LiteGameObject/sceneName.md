@@ -1,7 +1,9 @@
-# LiteGameObject.sceneName field
+# LiteGameObject.SceneName property
+
+The Name of the Scene.
 
 ```csharp
-public string sceneName;
+public string SceneName { get; set; }
 ```
 
 ## See Also

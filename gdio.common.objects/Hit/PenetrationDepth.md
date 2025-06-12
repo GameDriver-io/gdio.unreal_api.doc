@@ -1,5 +1,7 @@
 # Hit.PenetrationDepth field
 
+If this test started in penetration (bStartPenetrating is true) and a depenetration vector can be computed, this value is the distance along Normal that will result in moving out of penetration.
+
 ```csharp
 public float PenetrationDepth;
 ```

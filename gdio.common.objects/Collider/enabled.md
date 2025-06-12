@@ -1,5 +1,7 @@
 # Collider.enabled field
 
+Boolean if the collider is enabled or not.
+
 ```csharp
 public bool enabled;
 ```

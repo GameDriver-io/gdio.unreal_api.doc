@@ -1,10 +1,14 @@
 # ApiClient.Ping method
 
-Use this function to check for connectivity
+Internal (void returning) function to maintain connectivity. Not called by users.
 
 ```csharp
 public void Ping(int timeout = 60)
 ```
+
+| parameter | description |
+| --- | --- |
+| timeout | The amount of time in seconds to wait for connectivity to establish with the game. |
 
 ## See Also
 

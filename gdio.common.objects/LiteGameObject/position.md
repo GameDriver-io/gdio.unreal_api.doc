@@ -1,7 +1,9 @@
-# LiteGameObject.position field
+# LiteGameObject.Position property
+
+The Absolute Position of the object.
 
 ```csharp
-public Vector3 position;
+public Vector3 Position { get; set; }
 ```
 
 ## See Also

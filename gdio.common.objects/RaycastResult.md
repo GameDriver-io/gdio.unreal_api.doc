@@ -1,5 +1,7 @@
 # RaycastResult class
 
+Structure used to get information back from a raycast.
+
 ```csharp
 public class RaycastResult
 ```
@@ -9,12 +11,12 @@ public class RaycastResult
 | name | description |
 | --- | --- |
 | [RaycastResult](RaycastResult/RaycastResult.md)() | The default constructor. |
-| [hasButton](RaycastResult/hasButton.md) { get; set; } |  |
-| [name](RaycastResult/name.md) { get; set; } |  |
-| [point](RaycastResult/point.md) { get; set; } |  |
-| [tag](RaycastResult/tag.md) { get; set; } |  |
-| [type](RaycastResult/type.md) { get; set; } |  |
-| [typeFullName](RaycastResult/typeFullName.md) { get; set; } |  |
+| [hasButton](RaycastResult/hasButton.md) { get; set; } | Boolean of whether the object hit by the raycast has a Button component. |
+| [name](RaycastResult/name.md) { get; set; } | The Name of the object hit by the raycast. |
+| [point](RaycastResult/point.md) { get; set; } | The impact point in world space where the ray hit the collider. |
+| [tag](RaycastResult/tag.md) { get; set; } | The Tag of the object hit by the raycast. |
+| [type](RaycastResult/type.md) { get; set; } | The Type of object hit by the raycase (e.g. Physics). |
+| [typeFullName](RaycastResult/typeFullName.md) { get; set; } | The name of the object class (e.g. UnityEngine.GameObject) |
 | override [ToString](RaycastResult/ToString.md)() |  |
 
 ## See Also

@@ -1,7 +1,9 @@
-# LiteGameObject.hierarchyPath field
+# LiteGameObject.HierarchyPath property
+
+The HierarchyPath to the GameObject.
 
 ```csharp
-public string hierarchyPath;
+public string HierarchyPath { get; set; }
 ```
 
 ## See Also

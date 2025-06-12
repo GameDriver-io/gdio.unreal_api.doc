@@ -8,9 +8,9 @@ public enum UNREAL_HIT_EVENT
 
 | name | value | description |
 | --- | --- | --- |
-| HIT_EVENT | `0` |  |
-| OVERLAP_BEGIN_EVENT | `1` |  |
-| OVERLAP_END_EVENT | `2` |  |
+| HIT_EVENT | `0` | Hit. |
+| OVERLAP_BEGIN_EVENT | `1` | Overlap begin |
+| OVERLAP_END_EVENT | `2` | Overlap end event. |
 
 ## See Also
 

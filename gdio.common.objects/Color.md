@@ -1,5 +1,7 @@
 # Color class
 
+A representation Color.
+
 ```csharp
 public class Color : IEquatable<Color>
 ```
@@ -10,10 +12,10 @@ public class Color : IEquatable<Color>
 | --- | --- |
 | [Color](Color/Color.md)(…) |  (2 constructors) |
 | [Item](Color/Item.md) { get; set; } |  |
-| [a](Color/a.md) |  |
-| [b](Color/b.md) |  |
-| [g](Color/g.md) |  |
-| [r](Color/r.md) |  |
+| [a](Color/a.md) | The alpha (transparency) value. |
+| [b](Color/b.md) | The blue value. |
+| [g](Color/g.md) | The green value. |
+| [r](Color/r.md) | The red value. |
 | [Equals](Color/Equals.md)(…) |  |
 | override [Equals](Color/Equals.md)(…) |  |
 | override [GetHashCode](Color/GetHashCode.md)() |  |

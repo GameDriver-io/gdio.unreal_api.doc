@@ -1,5 +1,7 @@
 # Matrix4x4 class
 
+A standard 4x4 transformation matrix.
+
 ```csharp
 public class Matrix4x4
 ```

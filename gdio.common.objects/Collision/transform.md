@@ -1,5 +1,7 @@
 # Collision.transform field
 
+The [`Transform`](../Transform.md) of the GameObject.
+
 ```csharp
 public Transform transform;
 ```

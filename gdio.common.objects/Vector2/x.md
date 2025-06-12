@@ -1,5 +1,7 @@
 # Vector2.x field
 
+The x component.
+
 ```csharp
 public float x;
 ```

@@ -1,7 +1,9 @@
-# LiteGameObject.typeFullName field
+# LiteGameObject.TypeFullName property
+
+The Full Type the object.
 
 ```csharp
-public string typeFullName;
+public string TypeFullName { get; set; }
 ```
 
 ## See Also

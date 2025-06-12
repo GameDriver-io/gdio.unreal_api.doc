@@ -1,5 +1,7 @@
 # PhysicMaterial.bounciness field
 
+How bouncy a surface is.
+
 ```csharp
 public float bounciness;
 ```

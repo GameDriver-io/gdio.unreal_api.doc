@@ -1,7 +1,9 @@
-# LiteGameObject.hashCode field
+# LiteGameObject.HashCode property
+
+The Hash Code of the object.
 
 ```csharp
-public int hashCode;
+public int HashCode { get; set; }
 ```
 
 ## See Also

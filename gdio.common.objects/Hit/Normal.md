@@ -1,5 +1,7 @@
 # Hit.Normal field
 
+Normal of the hit in world space, for the object that was swept.
+
 ```csharp
 public Vector3 Normal;
 ```

@@ -1,5 +1,7 @@
 # Collision.relativeVelocity field
 
+A [`Vector3`](../Vector3.md) describing the relative velocity value.
+
 ```csharp
 public Vector3 relativeVelocity;
 ```

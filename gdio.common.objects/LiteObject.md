@@ -1,5 +1,7 @@
 # LiteObject class
 
+A simplistic version of UnityEngine.GameObject
+
 ```csharp
 public class LiteObject
 ```
@@ -9,8 +11,8 @@ public class LiteObject
 | name | description |
 | --- | --- |
 | [LiteObject](LiteObject/LiteObject.md)() | The default constructor. |
-| [instanceId](LiteObject/instanceId.md) |  |
-| [name](LiteObject/name.md) |  |
+| [InstanceId](LiteObject/InstanceId.md) { get; set; } | The name of the object. |
+| [Name](LiteObject/Name.md) { get; set; } | The name of the object. |
 
 ## See Also
 

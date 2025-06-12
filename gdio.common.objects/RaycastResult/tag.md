@@ -1,5 +1,7 @@
 # RaycastResult.tag property
 
+The Tag of the object hit by the raycast.
+
 ```csharp
 public string tag { get; set; }
 ```

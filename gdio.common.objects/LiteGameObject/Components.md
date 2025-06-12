@@ -1,5 +1,7 @@
 # LiteGameObject.Components field
 
+A list of the Component Types associated with the object.
+
 ```csharp
 public List<LiteComponent> Components;
 ```

@@ -1,5 +1,7 @@
 # Collision.HierarchyPath field
 
+THe HierarchyPath of the GameObject that recieved the OnCollision event
+
 ```csharp
 public string HierarchyPath;
 ```

@@ -1,5 +1,7 @@
 # Collider.contactOffset field
 
+Contact offset value of the collider.
+
 ```csharp
 public float contactOffset;
 ```

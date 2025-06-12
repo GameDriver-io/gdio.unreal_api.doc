@@ -1,5 +1,7 @@
 # Collider class
 
+The lite version of the UnityEngine.Collider
+
 ```csharp
 public class Collider : LiteComponent
 ```
@@ -9,13 +11,13 @@ public class Collider : LiteComponent
 | name | description |
 | --- | --- |
 | [Collider](Collider/Collider.md)() | The default constructor. |
-| [attachedRigidbody](Collider/attachedRigidbody.md) |  |
-| [bounds](Collider/bounds.md) |  |
-| [contactOffset](Collider/contactOffset.md) |  |
-| [enabled](Collider/enabled.md) |  |
-| [isTrigger](Collider/isTrigger.md) |  |
-| [material](Collider/material.md) |  |
-| [sharedMaterial](Collider/sharedMaterial.md) |  |
+| [attachedRigidbody](Collider/attachedRigidbody.md) | The [`Rigidbody`](./Rigidbody.md) that the collider is attached to. |
+| [bounds](Collider/bounds.md) | The [`Bounds`](./Bounds.md) of the collider. |
+| [contactOffset](Collider/contactOffset.md) | Contact offset value of the collider. |
+| [enabled](Collider/enabled.md) | Boolean if the collider is enabled or not. |
+| [isTrigger](Collider/isTrigger.md) | Boolean if the collider is a trigger or not. |
+| [material](Collider/material.md) | The [`PhysicMaterial`](./PhysicMaterial.md) of the collider. |
+| [sharedMaterial](Collider/sharedMaterial.md) | The shared [`PhysicMaterial`](./PhysicMaterial.md) of the collider. |
 
 ## See Also
 

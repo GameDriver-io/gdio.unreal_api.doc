@@ -1,6 +1,6 @@
 # ApiClient.GetObjectRotation method
 
-EGet the rotation of an in Game AActor or a USceneComponent as a Vector.
+Get the rotation of an in Game AActor or a USceneComponent as a Vector.
 
 ```csharp
 public Vector3 GetObjectRotation(string hierarchyPath, int timeout = 10)

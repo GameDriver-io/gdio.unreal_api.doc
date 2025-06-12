@@ -1,5 +1,7 @@
 # PhysicMaterial.frictionCombine field
 
+Determines how the friction is combined. Unity 2018
+
 ```csharp
 public PhysicMaterialCombine frictionCombine;
 ```

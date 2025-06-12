@@ -1,5 +1,7 @@
 # GameConnectionDetails.Addr field
 
+The IPAddress of the connected game./&gt;
+
 ```csharp
 public string Addr;
 ```

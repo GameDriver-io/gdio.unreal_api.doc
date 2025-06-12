@@ -1,5 +1,7 @@
 # Collider.attachedRigidbody field
 
+The [`Rigidbody`](../Rigidbody.md) that the collider is attached to.
+
 ```csharp
 public Rigidbody attachedRigidbody;
 ```

@@ -1,5 +1,7 @@
 # ObjectListFilter enumeration
 
+Enumeration to filter objects by.
+
 ```csharp
 public enum ObjectListFilter
 ```
@@ -8,9 +10,9 @@ public enum ObjectListFilter
 
 | name | value | description |
 | --- | --- | --- |
-| UNTAGGED | `0` |  |
-| TAGGED | `1` |  |
-| ALL | `2` |  |
+| UNTAGGED | `0` | Untagged objects, returns their name |
+| TAGGED | `1` | TAGGED objects, returns their tag |
+| ALL | `2` | All objects, returns tagged and untagged object list |
 
 ## See Also
 

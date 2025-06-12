@@ -1,7 +1,9 @@
-# LiteGameObject.rotation field
+# LiteGameObject.Rotation property
+
+The Rotation of the object.
 
 ```csharp
-public Quaternion rotation;
+public Quaternion Rotation { get; set; }
 ```
 
 ## See Also

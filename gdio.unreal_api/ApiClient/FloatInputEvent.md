@@ -1,6 +1,6 @@
 # ApiClient.FloatInputEvent method
 
-Use this function to send arbitrary Float Input Event states to the game.
+Send arbitrary Float Input Event states to the game.
 
 ```csharp
 public bool FloatInputEvent(string inputControlPath, float value, ulong numberOfFrames = 1, 

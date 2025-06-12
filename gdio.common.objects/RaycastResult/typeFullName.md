@@ -1,5 +1,7 @@
 # RaycastResult.typeFullName property
 
+The name of the object class (e.g. UnityEngine.GameObject)
+
 ```csharp
 public string typeFullName { get; set; }
 ```

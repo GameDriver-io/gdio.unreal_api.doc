@@ -1,5 +1,7 @@
 # PhysicMaterial class
 
+Physics material describes how to handle collisions.
+
 ```csharp
 public class PhysicMaterial : LiteObject
 ```
@@ -9,11 +11,11 @@ public class PhysicMaterial : LiteObject
 | name | description |
 | --- | --- |
 | [PhysicMaterial](PhysicMaterial/PhysicMaterial.md)() | The default constructor. |
-| [bounceCombine](PhysicMaterial/bounceCombine.md) |  |
-| [bounciness](PhysicMaterial/bounciness.md) |  |
-| [dynamicFriction](PhysicMaterial/dynamicFriction.md) |  |
-| [frictionCombine](PhysicMaterial/frictionCombine.md) |  |
-| [staticFriction](PhysicMaterial/staticFriction.md) |  |
+| [bounceCombine](PhysicMaterial/bounceCombine.md) | Determines how the bounceiness is combined. Unity 2018 |
+| [bounciness](PhysicMaterial/bounciness.md) | How bouncy a surface is. |
+| [dynamicFriction](PhysicMaterial/dynamicFriction.md) | The friction used when already moving. |
+| [frictionCombine](PhysicMaterial/frictionCombine.md) | Determines how the friction is combined. Unity 2018 |
+| [staticFriction](PhysicMaterial/staticFriction.md) | The friction coefficient used when an object is lying on the surface. |
 
 ## See Also
 

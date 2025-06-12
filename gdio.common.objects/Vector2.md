@@ -1,5 +1,7 @@
 # Vector2 class
 
+A representation of 2D vectors and points.
+
 ```csharp
 public class Vector2 : IEquatable<Vector2>
 ```
@@ -10,10 +12,16 @@ public class Vector2 : IEquatable<Vector2>
 | --- | --- |
 | [Vector2](Vector2/Vector2.md)() | The default constructor. |
 | [Vector2](Vector2/Vector2.md)(…) |  |
-| [x](Vector2/x.md) |  |
-| [y](Vector2/y.md) |  |
+| static [zero](Vector2/zero.md) { get; } | Shorthand for writing @@Vector2(0, 0)@@ |
+| [magnitude](Vector2/magnitude.md) { get; } | Returns the length of this vector (RO). |
+| [sqrMagnitude](Vector2/sqrMagnitude.md) { get; } | The square magnitude component. |
+| [x](Vector2/x.md) | The x component. |
+| [y](Vector2/y.md) | The y component. |
 | [Equals](Vector2/Equals.md)(…) |  (2 methods) |
 | override [ToString](Vector2/ToString.md)() |  |
+| static [Angle](Vector2/Angle.md)(…) |  |
+| static [Distance](Vector2/Distance.md)(…) |  |
+| static [Dot](Vector2/Dot.md)(…) |  |
 
 ## See Also
 

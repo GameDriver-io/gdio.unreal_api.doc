@@ -1,25 +1,63 @@
 # gdio.common.objects assembly
 
+## gdio.common.lookup namespace
+
+| public type | description |
+| --- | --- |
+| class [HPathObject](./gdio.common.lookup/HPathObject.md) |  |
+| class [LookupObject](./gdio.common.lookup/LookupObject.md) |  |
+| class [ObjectRef](./gdio.common.lookup/ObjectRef.md) |  |
+
 ## gdio.common.objects namespace
 
 | public type | description |
 | --- | --- |
-| class [Color](./gdio.common.objects/Color.md) |  |
-| enum [CoordinateConversion](./gdio.common.objects/CoordinateConversion.md) |  |
-| class [GameConnectionDetails](./gdio.common.objects/GameConnectionDetails.md) |  |
-| class [HPathObject](./gdio.common.objects/HPathObject.md) |  |
-| class [LiteComponent](./gdio.common.objects/LiteComponent.md) |  |
-| class [LiteGameObject](./gdio.common.objects/LiteGameObject.md) |  |
-| class [LiteObject](./gdio.common.objects/LiteObject.md) |  |
+| enum [ApiTypes](./gdio.common.objects/ApiTypes.md) | Use this to initialize APIs. |
+| class [ArticulationBody](./gdio.common.objects/ArticulationBody.md) |  |
+| class [Bounds](./gdio.common.objects/Bounds.md) |  |
+| class [Collider](./gdio.common.objects/Collider.md) | The lite version of the UnityEngine.Collider |
+| class [Collision](./gdio.common.objects/Collision.md) | Describes a collision |
+| enum [CollisionDetectionMode](./gdio.common.objects/CollisionDetectionMode.md) |  |
+| enum [COLLISION_EVENT](./gdio.common.objects/COLLISION_EVENT.md) | The type of collision event recieved. |
+| class [Color](./gdio.common.objects/Color.md) | A representation Color. |
+| class [ContactPoint](./gdio.common.objects/ContactPoint.md) |  |
+| enum [CoordinateConversion](./gdio.common.objects/CoordinateConversion.md) | Enumeration for the type of coordinate conversion. |
+| class [FGeometry](./gdio.common.objects/FGeometry.md) |  |
+| enum [FileCollisionOption](./gdio.common.objects/FileCollisionOption.md) | Used to choose what happens when a file with a given path already exists. |
+| static class [FileCollisionOptionExtensions](./gdio.common.objects/FileCollisionOptionExtensions.md) |  |
+| class [FrustumPlanes](./gdio.common.objects/FrustumPlanes.md) |  |
+| class [GameConnectionDetails](./gdio.common.objects/GameConnectionDetails.md) | This class provides information about the currently connected game. |
+| static class [GDIOUnitTest](./gdio.common.objects/GDIOUnitTest.md) |  |
+| class [Hit](./gdio.common.objects/Hit.md) | Describes a collision |
+| enum [InputMapOutputTypes](./gdio.common.objects/InputMapOutputTypes.md) | Enumeration of the InputSystem Map Output Type |
+| class [LiteComponent](./gdio.common.objects/LiteComponent.md) | A simplistic version of UnityEngine.Component |
+| class [LiteGameObject](./gdio.common.objects/LiteGameObject.md) | This is a lite version of the GameObject. |
+| class [LiteObject](./gdio.common.objects/LiteObject.md) | A simplistic version of UnityEngine.GameObject |
+| class [LiteVisualElement](./gdio.common.objects/LiteVisualElement.md) |  |
 | class [LogEventEventArgs](./gdio.common.objects/LogEventEventArgs.md) |  |
 | enum [LogLevel](./gdio.common.objects/LogLevel.md) |  |
 | enum [LogType](./gdio.common.objects/LogType.md) |  |
-| class [Quaternion](./gdio.common.objects/Quaternion.md) |  |
-| class [RaycastResult](./gdio.common.objects/RaycastResult.md) |  |
+| class [Matrix4x4](./gdio.common.objects/Matrix4x4.md) | A standard 4x4 transformation matrix. |
+| class [MethodInfo](./gdio.common.objects/MethodInfo.md) |  |
+| enum [MouseButtons](./gdio.common.objects/MouseButtons.md) | Mouse button enumerations to use for input. |
+| enum [ObjectListFilter](./gdio.common.objects/ObjectListFilter.md) | Enumeration to filter objects by. |
+| class [PhysicMaterial](./gdio.common.objects/PhysicMaterial.md) | Physics material describes how to handle collisions. |
+| enum [PhysicMaterialCombine](./gdio.common.objects/PhysicMaterialCombine.md) |  |
+| class [PropertyInfo](./gdio.common.objects/PropertyInfo.md) |  |
+| class [Quaternion](./gdio.common.objects/Quaternion.md) | A representation of 3D rotation. See !:https://scriptinghelpers.org/blog/how-to-think-about-quaternions for more information. |
+| class [RaycastResult](./gdio.common.objects/RaycastResult.md) | Structure used to get information back from a raycast. |
+| class [Rigidbody](./gdio.common.objects/Rigidbody.md) |  |
+| enum [RigidbodyConstraints](./gdio.common.objects/RigidbodyConstraints.md) |  |
+| enum [RigidbodyInterpolation](./gdio.common.objects/RigidbodyInterpolation.md) |  |
+| enum [ScriptExecutionMode](./gdio.common.objects/ScriptExecutionMode.md) | Lua script execution modes. |
+| class [ScriptSignalEventArgs](./gdio.common.objects/ScriptSignalEventArgs.md) |  |
+| enum [Space](./gdio.common.objects/Space.md) | Enumeration of the Space type |
 | class [Transform](./gdio.common.objects/Transform.md) |  |
+| class [UnityLogEventEventArgs](./gdio.common.objects/UnityLogEventEventArgs.md) |  |
 | enum [UNREAL_HIT_EVENT](./gdio.common.objects/UNREAL_HIT_EVENT.md) |  |
-| class [Vector2](./gdio.common.objects/Vector2.md) |  |
-| class [Vector3](./gdio.common.objects/Vector3.md) |  |
-| class [Vector4](./gdio.common.objects/Vector4.md) |  |
+| class [Vector2](./gdio.common.objects/Vector2.md) | A representation of 2D vectors and points. |
+| class [Vector3](./gdio.common.objects/Vector3.md) | A representation of 3D vectors and points. |
+| class [Vector4](./gdio.common.objects/Vector4.md) | A representation of 3D vectors and points. |
+| enum [XRDeviceModes](./gdio.common.objects/XRDeviceModes.md) |  |
 
 <!-- DO NOT EDIT: generated by xmldocmd for gdio.common.objects.dll -->

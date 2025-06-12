@@ -1,5 +1,7 @@
 # Collision class
 
+Describes a collision
+
 ```csharp
 public class Collision
 ```
@@ -9,16 +11,16 @@ public class Collision
 | name | description |
 | --- | --- |
 | [Collision](Collision/Collision.md)() | The default constructor. |
-| [CollisionType](Collision/CollisionType.md) |  |
-| [contactCount](Collision/contactCount.md) |  |
-| [contacts](Collision/contacts.md) |  |
-| [gameObject](Collision/gameObject.md) |  |
-| [HierarchyPath](Collision/HierarchyPath.md) |  |
-| [impulse](Collision/impulse.md) |  |
-| [relativeVelocity](Collision/relativeVelocity.md) |  |
-| [rigidbody](Collision/rigidbody.md) |  |
-| [Timestamp](Collision/Timestamp.md) |  |
-| [transform](Collision/transform.md) |  |
+| [CollisionType](Collision/CollisionType.md) | The enumeration value of the collision type [`COLLISION_EVENT`](./COLLISION_EVENT.md) |
+| [contactCount](Collision/contactCount.md) | The number of contacts in the collision |
+| [contacts](Collision/contacts.md) | Array of contacts, [`ContactPoint`](./ContactPoint.md) |
+| [gameObject](Collision/gameObject.md) | The LiteGameObject of the collision, [`LiteGameObject`](./LiteGameObject.md) |
+| [HierarchyPath](Collision/HierarchyPath.md) | THe HierarchyPath of the GameObject that recieved the OnCollision event |
+| [impulse](Collision/impulse.md) | A [`Vector3`](./Vector3.md) describing the impulse value. |
+| [relativeVelocity](Collision/relativeVelocity.md) | A [`Vector3`](./Vector3.md) describing the relative velocity value. |
+| [rigidbody](Collision/rigidbody.md) | The [`Rigidbody`](./Rigidbody.md) of the collision. |
+| [Timestamp](Collision/Timestamp.md) | The timestamp of when the collision occured |
+| [transform](Collision/transform.md) | The [`Transform`](./Transform.md) of the GameObject. |
 
 ## See Also
 

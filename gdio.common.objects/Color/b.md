@@ -1,5 +1,7 @@
 # Color.b field
 
+The blue value.
+
 ```csharp
 public float b;
 ```

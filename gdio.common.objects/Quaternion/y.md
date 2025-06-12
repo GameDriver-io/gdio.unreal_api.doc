@@ -1,5 +1,7 @@
 # Quaternion.y field
 
+The y component.
+
 ```csharp
 public float y;
 ```

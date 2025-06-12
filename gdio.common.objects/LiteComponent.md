@@ -1,5 +1,7 @@
 # LiteComponent class
 
+A simplistic version of UnityEngine.Component
+
 ```csharp
 public class LiteComponent : LiteObject
 ```
@@ -9,11 +11,11 @@ public class LiteComponent : LiteObject
 | name | description |
 | --- | --- |
 | [LiteComponent](LiteComponent/LiteComponent.md)() | The default constructor. |
-| [gameObject](LiteComponent/gameObject.md) |  |
-| [hierarchyPath](LiteComponent/hierarchyPath.md) |  |
-| [tag](LiteComponent/tag.md) |  |
-| [transform](LiteComponent/transform.md) |  |
-| [typeFullName](LiteComponent/typeFullName.md) |  |
+| [gameObject](LiteComponent/gameObject.md) | The lite version of the gameObject the component is attached to. |
+| [hierarchyPath](LiteComponent/hierarchyPath.md) | The HierarchyPath of the component. |
+| [tag](LiteComponent/tag.md) | The tag of the gameObject |
+| [transform](LiteComponent/transform.md) | The transform attached to the gameObject. |
+| [typeFullName](LiteComponent/typeFullName.md) | The Type fullname of the class. |
 
 ## See Also
 

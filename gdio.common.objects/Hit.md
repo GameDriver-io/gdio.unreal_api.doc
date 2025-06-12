@@ -1,5 +1,7 @@
 # Hit class
 
+Describes a collision
+
 ```csharp
 public class Hit
 ```
@@ -9,14 +11,14 @@ public class Hit
 | name | description |
 | --- | --- |
 | [Hit](Hit/Hit.md)() | The default constructor. |
-| [BlockingHit](Hit/BlockingHit.md) |  |
-| [CollisionType](Hit/CollisionType.md) |  |
-| [gameObject](Hit/gameObject.md) |  |
-| [HierarchyPath](Hit/HierarchyPath.md) |  |
-| [Location](Hit/Location.md) |  |
-| [Normal](Hit/Normal.md) |  |
-| [PenetrationDepth](Hit/PenetrationDepth.md) |  |
-| [Timestamp](Hit/Timestamp.md) |  |
+| [BlockingHit](Hit/BlockingHit.md) | PrimitiveComponent hit by the trace. |
+| [CollisionType](Hit/CollisionType.md) | The enumeration value of the collision type [`COLLISION_EVENT`](./COLLISION_EVENT.md) |
+| [gameObject](Hit/gameObject.md) | The LiteGameObject of the collision, [`LiteGameObject`](./LiteGameObject.md) |
+| [HierarchyPath](Hit/HierarchyPath.md) | THe HierarchyPath of the GameObject that recieved the OnCollision event |
+| [Location](Hit/Location.md) | The location in world space where the moving shape would end up against the impacted object, if there is a hit. |
+| [Normal](Hit/Normal.md) | Normal of the hit in world space, for the object that was swept. |
+| [PenetrationDepth](Hit/PenetrationDepth.md) | If this test started in penetration (bStartPenetrating is true) and a depenetration vector can be computed, this value is the distance along Normal that will result in moving out of penetration. |
+| [Timestamp](Hit/Timestamp.md) | The timestamp of when the collision occured |
 
 ## See Also
 

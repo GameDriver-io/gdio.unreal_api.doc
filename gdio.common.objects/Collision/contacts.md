@@ -1,5 +1,7 @@
 # Collision.contacts field
 
+Array of contacts, [`ContactPoint`](../ContactPoint.md)
+
 ```csharp
 public ContactPoint[] contacts;
 ```
